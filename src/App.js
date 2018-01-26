@@ -5,15 +5,44 @@ import './App.css';
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
+      <div className="App flexbox">
+        <header>
+          Header
         </header>
-        <h1>Hello, World!</h1>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
+
+        <div className="flexbox-item fill-area flex-column">
+          <div className="flexbox-item fill-area-content">
+            Content
+            <br /><br />
+            Emulates height 100% with a horizontal flexbox with stretch
+            <br /><br />
+            This box with a border should fill the blue area except for the padding (just to show the middle flexbox item).
+          </div>
+          <div className="flexbox-item fill-area-content">
+            Content
+            <br /><br />
+            Emulates height 100% with a horizontal flexbox with stretch
+            <br /><br />
+            This box with a border should fill the blue area except for the padding (just to show the middle flexbox item).
+          </div>
+          <div className="flexbox-item fill-area-content">
+            Content
+            <br /><br />
+            Emulates height 100% with a horizontal flexbox with stretch
+            <br /><br />
+            This box with a border should fill the blue area except for the padding (just to show the middle flexbox item).
+          </div>
+        </div>
+
+        <div className="flexbox-item fill-area flex-row">
+          <div className="flexbox-item fill-area-content">Hello world!</div>
+          <div className="flexbox-item fill-area-content">Hello world!</div>
+          <div className="flexbox-item fill-area-content">Hello world!</div>
+        </div>
+
+        <footer>
+          Footer
+        </footer>
       </div>
     );
   }
