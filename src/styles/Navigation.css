@@ -1,0 +1,32 @@
+.App-navigation {
+  position: relative;
+  background-color: rgba(0, 119, 181, 0.75);
+}
+
+.App-navigation ul {
+  list-style-type: none;
+  padding: 0;
+  max-width: 1000px;
+  overflow: auto;
+  text-align: center;
+}
+
+.App-navigation ul li {
+  display: inline-block;
+  padding: 0;
+}
+
+.App-navigation ul li a {
+  display: block;
+  padding: 20px;
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: color 0.5s, background-color 0.5s;
+}
+
+.App-navigation ul li a:hover {
+  color: #222222;
+  background-color: #fff;
+}

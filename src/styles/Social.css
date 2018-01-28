@@ -1,0 +1,40 @@
+.App-social {
+  margin: 0 auto;
+  padding: 0;
+  list-style-type: none;
+}
+
+.App-social li {
+  float: left;
+}
+
+.App-social button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  margin: 0 10px;
+  padding: 20px;
+  border-radius: 3px;
+  font-weight: bold;
+  transition: color 0.5s, background-color 0.5s;
+  color: #fff;
+  background-color: rgba(34, 34, 34, 0.75);
+}
+
+.App-social button.Linkedin:hover {
+  color: #222222;
+  background-color: #fff;
+}
+
+.App-social button.Twitter:hover {
+  color: #222222;
+  background-color: #fff;
+}
+
+
+.App-social button i {
+  color: #0077b5;
+  font-size: 2em;
+  vertical-align: middle;
+  margin-right: 10px;
+}

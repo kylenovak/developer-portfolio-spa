@@ -1,0 +1,63 @@
+*, *:before, *:after
+{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+html {
+  overflow: hidden;
+}
+
+html, body, #root
+{
+  width: 100%;
+  height: 100%;
+
+  margin: 0;
+  padding: 0;
+}
+
+body
+{
+  font-family: 'Open Sans', sans-serif;
+
+	overflow: hidden;
+	overflow-y: auto;
+	-webkit-perspective: 1px;
+	-moz-perspective: 1px;
+	perspective: 1px;
+	-webkit-transform-style: preserve-3d;
+	-moz-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+}
+
+.flexbox
+{
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.flexbox-item
+{
+  flex: 1;
+}
+
+.fill-area
+{
+  display: flex;
+  flex-direction: row;
+}
+
+.flexbox-item.flex-row {
+  flex-direction: row;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.flexbox-item.flex-column {
+  flex-direction: column;
+}
