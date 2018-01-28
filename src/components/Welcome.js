@@ -8,7 +8,7 @@ class Welcome extends Component {
     return (
       <section className="App-welcome">
         <div className="flexbox-item fill-area flex-column">
-          <p>Hi, I'm <span className="highlight">Kyle</span>, a <strong>Software Engineer</strong> whose passion is <em>building software</em>.</p>
+          <p>Hi, I'm <span className="highlight" title="Software Engineer">Kyle</span>, a <strong>Software Engineer</strong> whose passion is <em>building software</em>.</p>
           <Social />
           <PhotoAuthor />
         </div>

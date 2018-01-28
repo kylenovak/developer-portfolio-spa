@@ -11,7 +11,7 @@ class PhotoAuthor extends Component {
   render() {
     return (
       <span className="App-photo-author">
-        Photo by <a target="_blank" href={this.authorURL}><em>{this.authorName}</em></a>
+        Photo by <a title="Photographer" target="_blank" href={this.authorURL}><em>{this.authorName}</em></a>
       </span>
     );
   }

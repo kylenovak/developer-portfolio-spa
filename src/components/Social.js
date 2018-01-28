@@ -17,14 +17,14 @@ class Social extends Component {
       <ul className="App-social">
         <li>
           <a href={this.linkedinURL} target="_blank">
-            <button className="Linkedin">
+            <button className="Linkedin" title="Connect with me on Linkedin">
               <i className="fab fa-linkedin"></i> {this.linkedinButtonText}
             </button>
           </a>
         </li>
         <li>
           <a href={this.twitterURL} target="_blank">
-            <button className="Twitter">
+            <button className="Twitter" title="Follow me on Twitter">
               <i className="fab fa-twitter-square"></i> {this.twitterButtonText}
             </button>
           </a>

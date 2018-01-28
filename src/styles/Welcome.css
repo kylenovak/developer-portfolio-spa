@@ -15,6 +15,7 @@
   padding: 0 3px 3px 3px;
   border-radius: 3px;
   background-color: rgba(0, 119, 181, 0.75);
+  cursor: default;
 }
 
 .App-welcome p {
