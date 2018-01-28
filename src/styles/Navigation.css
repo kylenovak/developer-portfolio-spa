@@ -23,10 +23,9 @@
   font-weight: bold;
   text-decoration: none;
   text-transform: uppercase;
-  transition: color 0.5s, background-color 0.5s;
+  transition: background-color 0.5s;
 }
 
 .App-navigation ul li a:hover {
-  color: #222222;
-  background-color: #fff;
+  background-color: rgba(34, 34, 34, 0.75);
 }

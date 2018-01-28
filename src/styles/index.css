@@ -5,6 +5,11 @@
 	box-sizing: border-box;
 }
 
+*::selection {
+	color: #fff;
+  background: rgba(0, 119, 181, 0.75);
+}
+
 html {
   overflow: hidden;
 }
@@ -30,6 +35,11 @@ body
 	-webkit-transform-style: preserve-3d;
 	-moz-transform-style: preserve-3d;
 	transform-style: preserve-3d;
+}
+
+h1, h2, h3 {
+	font-family: 'Lato';
+	text-transform: uppercase;
 }
 
 .flexbox
