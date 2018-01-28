@@ -1,6 +1,7 @@
 .App-navigation {
   position: relative;
   background-color: rgba(0, 119, 181, 0.75);
+  border-bottom: 2px solid rgba(34, 34, 34, 0.75);
 }
 
 .App-navigation ul {
