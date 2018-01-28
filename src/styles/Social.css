@@ -21,16 +21,11 @@
   background-color: rgba(34, 34, 34, 0.75);
 }
 
-.App-social button.Linkedin:hover {
-  color: #222222;
-  background-color: #fff;
-}
-
+.App-social button.Linkedin:hover,
 .App-social button.Twitter:hover {
   color: #222222;
-  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.75);
 }
-
 
 .App-social button i {
   color: #0077b5;

@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Social from './Social';
+import PhotoAuthor from './PhotoAuthor';
 import '../styles/Welcome.css';
 
 class Welcome extends Component {
@@ -7,8 +8,9 @@ class Welcome extends Component {
     return (
       <section className="App-welcome">
         <div className="flexbox-item fill-area flex-column">
-          <p>Hi, I'm <span>Kyle</span>, a <strong>Software Engineer</strong> whose passion is <em>building software</em>.</p>
-          <Social linkedinButtonText="Connect with Kyle" twitterButtonText="Follow Kyle" />
+          <p>Hi, I'm <span className="highlight">Kyle</span>, a <strong>Software Engineer</strong> whose passion is <em>building software</em>.</p>
+          <Social />
+          <PhotoAuthor />
         </div>
       </section>
     );

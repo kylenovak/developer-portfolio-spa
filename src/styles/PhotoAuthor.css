@@ -1,0 +1,18 @@
+.App-photo-author {
+  color: #fff;
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+}
+
+.App-photo-author a {
+  color: #fff;
+  text-decoration: none;
+  border-bottom: 2px dotted #0077b5;
+  padding: 0 2px;
+  transition: background-color 0.5s;
+}
+
+.App-photo-author a:hover {
+  background-color: rgba(0, 119, 181, 0.75);
+}
