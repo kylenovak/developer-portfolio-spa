@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Social from './Social';
 import PhotoAuthor from './PhotoAuthor';
+import ScrollDown from './ScrollDown';
 import '../styles/Welcome.css';
 
 class Welcome extends Component {
@@ -11,6 +12,7 @@ class Welcome extends Component {
           <p>Hi, I'm <span className="highlight" title="Software Engineer">Kyle</span>, a <strong>Software Engineer</strong> whose passion is <em>building software</em>.</p>
           <Social />
           <PhotoAuthor />
+          <ScrollDown />
         </div>
       </section>
     );

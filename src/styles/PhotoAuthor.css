@@ -3,6 +3,7 @@
   position: absolute;
   right: 20px;
   bottom: 20px;
+  text-shadow: 1px 1px 1px rgba(34, 34, 34, 0.75);
 }
 
 .App-photo-author a {

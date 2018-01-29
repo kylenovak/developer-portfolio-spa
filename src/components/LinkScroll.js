@@ -10,12 +10,12 @@ class LinkScroll extends Component {
   scrollTo(hash) {
     let element = document.getElementById(hash);
     if (element !== null) {
-      element.scrollIntoView({behavior: "smooth"});
+      element.scrollIntoView({behavior: 'smooth'});
     }
     else {
-      // Scroll to to the top, i.e. 'home'
-      element = document.getElementById('home');
-      element.scrollIntoView({behavior: "smooth"});
+      // Scroll to to the top, i.e. 'header'
+      element = document.getElementById('header');
+      element.scrollIntoView({behavior: 'smooth'});
     }
   }
 

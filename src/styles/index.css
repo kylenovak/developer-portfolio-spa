@@ -7,11 +7,7 @@
 
 *::selection {
 	color: #fff;
-  background: rgba(0, 119, 181, 0.75);
-}
-
-html {
-  overflow: hidden;
+  background-color: rgba(0, 119, 181, 0.75);
 }
 
 html, body, #root
@@ -21,20 +17,13 @@ html, body, #root
 
   margin: 0;
   padding: 0;
+
+	overflow: hidden;
 }
 
 body
 {
   font-family: 'Open Sans', sans-serif;
-
-	overflow: hidden;
-	overflow-y: auto;
-	-webkit-perspective: 1px;
-	-moz-perspective: 1px;
-	perspective: 1px;
-	-webkit-transform-style: preserve-3d;
-	-moz-transform-style: preserve-3d;
-	transform-style: preserve-3d;
 }
 
 h1, h2, h3 {

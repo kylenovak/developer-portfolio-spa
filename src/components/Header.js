@@ -6,10 +6,11 @@ import '../styles/Header.css';
 class Header extends Component {
   render() {
     return (
-      <header className="App-header">
-        <div className="background-img"></div>
+      <header id="header" className="App-header">
         <div className="content header-content">
-          <h1><span>Kyle</span> Joseph <span>Novak</span></h1>
+          <h1 id="title">
+            Kyle <span>Joseph</span> Novak
+          </h1>
           <Welcome />
           <Navigation />
         </div>

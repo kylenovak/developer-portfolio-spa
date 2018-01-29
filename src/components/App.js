@@ -6,21 +6,25 @@ import '../styles/App.css';
 class App extends Component {
   render() {
     return (
-      <div id="home" className="App flexbox">
-        <Header />
-        <Skills />
+      <div className="App flexbox">
+        <div id="sticky"></div>
 
+        <div className="background-img"></div>
 
-        <div className="flexbox-item fill-area flex-column">
-          <div className="flexbox-item">Hello world!</div>
-          <div className="flexbox-item">Hello world!</div>
-          <div className="flexbox-item">Hello world!</div>
-        </div>
+        <main className="flexbox">
+          <Header />
+          <Skills />
 
+          <div className="flexbox-item fill-area flex-column">
+            <div className="flexbox-item">Hello world!</div>
+            <div className="flexbox-item">Hello world!</div>
+            <div className="flexbox-item">Hello world!</div>
+          </div>
 
-        <footer id="footer" className="App-footer">
-          Footer
-        </footer>
+          <footer id="footer" className="App-footer">
+            Footer
+          </footer>
+        </main>
       </div>
     );
   }

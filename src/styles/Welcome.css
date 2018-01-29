@@ -5,8 +5,9 @@
 .App-welcome div {
   color: #fff;
   text-align: center;
-  padding: 280px 20px 200px 20px;
+  padding: 240px 20px 240px 20px;
   background-color: rgba(34, 34, 34, 0.5);
+  box-shadow: 0 0 2px rgba(34, 34, 34, 0.5) inset;
 }
 
 .App-welcome div span.highlight {
@@ -24,4 +25,5 @@
   margin: 0 0 30px 0;
   margin-left: auto;
   margin-right: auto;
+  text-shadow: 1px 1px 1px rgba(34, 34, 34, 0.75);
 }

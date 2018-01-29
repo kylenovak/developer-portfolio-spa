@@ -7,19 +7,19 @@ class Skills extends Component {
     return (
       <section className="App-skills">
         <header className="flexbox-item flex-row">
-          <h2 id="skills"><span><i class="fas fa-hashtag"></i> Technical Skills</span></h2>
+          <h2 id="skills"><span><i className="fas fa-hashtag"></i> Technical Skills</span></h2>
         </header>
 
         <div className="flexbox-item fill-area flex-row">
-          <Skill title="Web & Mobile Apps">
+          <Skill title="Web & Mobile Apps" icon="laptop">
             I like software, it is very cool indeed. I like software, it is very cool indeed. I like software, it is very cool indeed.
           </Skill>
 
-          <Skill title="Game Development">
+          <Skill title="Game Development" icon="gamepad">
             I like software, it is very cool indeed. I like.
           </Skill>
 
-          <Skill title="Software Engineering">
+          <Skill title="Software Engineering" icon="building">
             I like software, it is very cool indeed. I like software, it is very cool.
           </Skill>
         </div>
