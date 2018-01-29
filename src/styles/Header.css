@@ -1,3 +1,8 @@
+.App-header a {
+  text-decoration: none;
+  color: inherit;
+}
+
 .App-header h1 {
   position: relative;
   text-align: center;
@@ -11,4 +16,35 @@
 
 .App-header h1 span {
   color: #0077b5;
+}
+
+.App-header #connect {
+  position: absolute;
+  top: 25px;
+  right: 20px;
+}
+
+.App-header #connect a {
+  padding: 10px;
+  font-size: 1em;
+  color: #fff;
+  display: inline-block;
+  text-shadow: 1px 1px 1px #005E9C;
+  background-color: #0077b5;
+  border: 1px solid #005E9C;
+  border-bottom: 5px solid #005E9C;
+  border-radius: 5px;
+}
+
+.App-header #connect a:active {
+  margin-top: 4px;
+  background-color: #005E9C;
+  border-bottom: 1px solid #005E9C;
+  box-shadow: 0 0 5px rgba(34, 34, 34, 0.5) inset;
+}
+
+.App-header #connect i {
+  font-size: 1.25em;
+  vertical-align: middle;
+  margin-right: 5px;
 }

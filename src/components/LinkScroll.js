@@ -8,6 +8,7 @@ class LinkScroll extends Component {
   }
 
   scrollTo(hash) {
+    // TODO: fix warnings for empty hash passed in
     let element = document.getElementById(hash);
     if (element !== null) {
       element.scrollIntoView({behavior: 'smooth'});
