@@ -5,6 +5,7 @@ BONUS:
 
 NOTE!
 FIX THESE FIRST:
+A.) FIX the Background IMAGE (it doesn't auto resize now...)
 a.) connect button - dont make it a LinkScroll, make it do a custom scroll event to Contact section.
 b.) start button (down arrow scroll) - dont make it a LinkScroll, make it do a click event handle to a dom element (i.e. nav); this shouldnt be a URL link -- it should scroll to right above the blue nav bar (at which point, 1px scroll down more and the header becomes STICKY).
 
