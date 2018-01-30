@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 import LinkScroll from './LinkScroll';
 
-import '../styles/Navigation.css';
+import '../styles/navigation.css';
 
 class Navigation extends Component {
   render() {
     return (
-      <nav className="App-navigation">
+      <nav className="App-navigation" id="nav">
         <ul className="flexbox-item flex-row">
           <li title="Home">
             <LinkScroll exact to="/"><i className="fas fa-home"></i> Home</LinkScroll>

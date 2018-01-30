@@ -1,18 +1,19 @@
 import React, { Component } from 'react';
+import Introduction from './Introduction';
 import Social from './Social';
 import PhotoAuthor from './PhotoAuthor';
-import ScrollDown from './ScrollDown';
-import '../styles/Welcome.css';
+import StartArrow from './StartArrow';
+import '../styles/welcome.css';
 
 class Welcome extends Component {
   render() {
     return (
       <section className="App-welcome">
         <div className="flexbox-item fill-area flex-column">
-          <p>Hi, I'm <span className="highlight" title="Software Engineer">Kyle</span>, a <strong>Software Engineer</strong> whose passion is <em>building software</em>.</p>
+          <Introduction />
           <Social />
           <PhotoAuthor />
-          <ScrollDown />
+          <StartArrow />
         </div>
       </section>
     );

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import '../styles/PhotoAuthor.css';
+import '../styles/photoAuthor.css';
 
 class PhotoAuthor extends Component {
   constructor() {

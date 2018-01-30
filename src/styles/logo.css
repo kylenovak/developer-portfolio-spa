@@ -1,0 +1,14 @@
+.App-logo {
+  position: relative;
+  text-align: center;
+  margin: 0;
+  padding: 20px;
+  color: #222222;
+  font-size: 3em;
+  background-color: rgba(255, 255, 255, 0.75);
+  border-bottom: 2px solid rgba(34, 34, 34, 0.75);
+}
+
+.App-logo span {
+  color: #0077b5;
+}

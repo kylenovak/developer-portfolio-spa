@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Skill from './Skill';
-import '../styles/Skills.css';
+import '../styles/skills.css';
 
 class Skills extends Component {
   render() {

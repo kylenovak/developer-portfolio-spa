@@ -1,33 +1,14 @@
-.App-header a {
-  text-decoration: none;
-  color: inherit;
-}
-
-.App-header h1 {
-  position: relative;
-  text-align: center;
-  margin: 0;
-  padding: 20px;
-  color: #222222;
-  font-size: 3em;
-  background-color: rgba(255, 255, 255, 0.75);
-  border-bottom: 2px solid rgba(34, 34, 34, 0.75);
-}
-
-.App-header h1 span {
-  color: #0077b5;
-}
-
-.App-header #connect {
+.App-connect-button {
   position: absolute;
   top: 25px;
   right: 20px;
 }
 
-.App-header #connect a {
+.App-connect-button a {
   padding: 10px;
   font-size: 1em;
   color: #fff;
+  text-decoration: none;
   display: inline-block;
   text-shadow: 1px 1px 1px #005E9C;
   background-color: #0077b5;
@@ -36,14 +17,14 @@
   border-radius: 5px;
 }
 
-.App-header #connect a:active {
+.App-connect-button a:active {
   margin-top: 4px;
   background-color: #005E9C;
   border-bottom: 1px solid #005E9C;
   box-shadow: 0 0 5px rgba(34, 34, 34, 0.5) inset;
 }
 
-.App-header #connect i {
+.App-connect-button i {
   font-size: 1.25em;
   vertical-align: middle;
   margin-right: 5px;
