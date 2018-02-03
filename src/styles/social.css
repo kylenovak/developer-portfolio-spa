@@ -1,14 +1,14 @@
-.App-social {
+#social {
   margin: 0 auto;
   padding: 0;
   list-style-type: none;
 }
 
-.App-social li {
+#social li {
   float: left;
 }
 
-.App-social button {
+#social button {
   border: none;
   outline: none;
   cursor: pointer;
@@ -21,13 +21,13 @@
   background-color: rgba(34, 34, 34, 0.75);
 }
 
-.App-social button.Linkedin:hover,
-.App-social button.Twitter:hover {
+#social button.Linkedin:hover,
+#social button.Twitter:hover {
   color: #222222;
   background-color: rgba(255, 255, 255, 0.75);
 }
 
-.App-social button i {
+#social button i {
   color: #0077b5;
   font-size: 2em;
   vertical-align: middle;

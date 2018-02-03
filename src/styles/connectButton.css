@@ -1,10 +1,10 @@
-.App-connect-button {
+#connect-button {
   position: absolute;
   top: 25px;
   right: 20px;
 }
 
-.App-connect-button a {
+#connect-button a {
   padding: 10px;
   font-size: 1em;
   color: #fff;
@@ -17,14 +17,14 @@
   border-radius: 5px;
 }
 
-.App-connect-button a:active {
+#connect-button a:active {
   margin-top: 4px;
   background-color: #005E9C;
   border-bottom: 1px solid #005E9C;
   box-shadow: 0 0 5px rgba(34, 34, 34, 0.5) inset;
 }
 
-.App-connect-button i {
+#connect-button i {
   font-size: 1.25em;
   vertical-align: middle;
   margin-right: 5px;

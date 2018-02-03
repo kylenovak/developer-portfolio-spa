@@ -1,4 +1,4 @@
-.App-photo-author {
+#photo-attribution {
   color: #fff;
   position: absolute;
   right: 20px;
@@ -6,7 +6,7 @@
   text-shadow: 1px 1px 1px rgba(34, 34, 34, 0.75);
 }
 
-.App-photo-author a {
+#photo-attribution a {
   color: #fff;
   text-decoration: none;
   border-bottom: 2px dotted #0077b5;
@@ -14,6 +14,11 @@
   transition: background-color 0.5s;
 }
 
-.App-photo-author a:hover {
+#photo-attribution a:hover {
   background-color: rgba(0, 119, 181, 0.75);
+}
+
+#photo-attribution i {
+  color: #0077b5;
+  cursor: pointer;
 }

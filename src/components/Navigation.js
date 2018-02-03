@@ -6,7 +6,7 @@ import '../styles/navigation.css';
 class Navigation extends Component {
   render() {
     return (
-      <nav className="App-navigation" id="nav">
+      <nav id="navigation">
         <ul className="flexbox-item flex-row">
           <li title="Home">
             <LinkScroll exact to="/"><i className="fas fa-home"></i> Home</LinkScroll>

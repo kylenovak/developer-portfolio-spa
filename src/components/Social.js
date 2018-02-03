@@ -14,16 +14,16 @@ class Social extends Component {
 
   render() {
     return (
-      <ul className="App-social">
+      <ul id="social">
         <li>
-          <a href={this.linkedinURL} target="_blank">
+          <a href={this.linkedinURL} target="_blank" rel="noopener noreferrer">
             <button className="Linkedin" title="Connect with me on Linkedin">
               <i className="fab fa-linkedin"></i> {this.linkedinButtonText}
             </button>
           </a>
         </li>
         <li>
-          <a href={this.twitterURL} target="_blank">
+          <a href={this.twitterURL} target="_blank" rel="noopener noreferrer">
             <button className="Twitter" title="Follow me on Twitter">
               <i className="fab fa-twitter-square"></i> {this.twitterButtonText}
             </button>

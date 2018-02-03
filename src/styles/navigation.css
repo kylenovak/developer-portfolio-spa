@@ -1,10 +1,10 @@
-.App-navigation {
+#navigation {
   position: relative;
   background-color: rgba(0, 119, 181, 0.75);
   border-bottom: 2px solid rgba(34, 34, 34, 0.75);
 }
 
-.App-navigation ul {
+#navigation ul {
   list-style-type: none;
   padding: 0;
   max-width: 1000px;
@@ -12,12 +12,12 @@
   text-align: center;
 }
 
-.App-navigation ul li {
+#navigation ul li {
   display: inline-block;
   padding: 0;
 }
 
-.App-navigation ul li a {
+#navigation ul li a {
   display: block;
   padding: 20px;
   color: #fff;
@@ -27,12 +27,12 @@
   transition: color 0.5s, background-color 0.5s;
 }
 
-.App-navigation .active {
+#navigation .active {
   color: #222222;
   background-color: rgba(255, 255, 255, 0.75);
 }
 
-.App-navigation ul li a:hover {
+#navigation ul li a:hover {
   color: #222222;
   background-color: rgba(255, 255, 255, 0.75);
 }

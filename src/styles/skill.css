@@ -1,4 +1,4 @@
-.App-skill {
+.skill {
   width: 33%;
   color: #000;
   padding: 20px;
@@ -11,21 +11,21 @@
   transition: background-color 0.5s;
 }
 
-.App-skill:hover {
+.skill:hover {
   background-color: rgba(34, 34, 34, 0.75);
 }
 
-.App-skill:hover i {
+.skill:hover i {
   color: #fff;
   background-color: rgba(0, 119, 181, 0.75);
 }
 
-.App-skill:hover h3,
-.App-skill:hover p {
+.skill:hover h3,
+.skill:hover p {
   color: #fff;
 }
 
-.App-skill i {
+.skill i {
   color: #0077b5;
   padding: 40px;
   margin: 20px 0;
@@ -36,11 +36,11 @@
   transition: color 0.5s, background-color 0.5s;
 }
 
-.App-skill h3 {
+.skill h3 {
   margin: 0;
   transition: color 0.5s;
 }
 
-.App-skill p {
+.skill p {
   transition: color 0.5s;
 }

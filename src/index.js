@@ -7,7 +7,10 @@ import './styles/index.css';
 
 ReactDOM.render(
   <HashRouter>
-    <App />
+    <div className="flexbox">
+      <div id="sticky" className="hidden"></div>
+      <App />
+    </div>
   </HashRouter>,
   document.getElementById('root')
 );

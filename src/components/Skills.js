@@ -5,9 +5,9 @@ import '../styles/skills.css';
 class Skills extends Component {
   render() {
     return (
-      <section className="App-skills">
+      <section id="skills">
         <header className="flexbox-item flex-row">
-          <h2 id="skills"><span><i className="fas fa-hashtag"></i> Technical Skills</span></h2>
+          <h2><span><i className="fas fa-hashtag"></i> Technical Skills</span></h2>
         </header>
 
         <div className="flexbox-item fill-area flex-row">

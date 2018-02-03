@@ -4,7 +4,7 @@ import '../styles/introduction.css';
 class Introduction extends Component {
   render() {
     return (
-      <p className="App-introduction">Hi, I'm <span title="Software Engineer">Kyle</span>, a <strong>Software Engineer</strong> whose passion is <em>building software</em>.</p>
+      <p id="introduction">Hi, I'm <span title="Software Engineer">Kyle</span>, a <strong>Software Engineer</strong> whose passion is <em>building software</em>.</p>
     );
   }
 }

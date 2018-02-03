@@ -6,10 +6,8 @@ import '../styles/app.css';
 class App extends Component {
   render() {
     return (
-      <div className="App flexbox">
-        <div id="sticky"></div>
-
-        <div className="background-img"></div>
+      <div id="app" className="flexbox">
+        <div id="background-img"></div>
 
         <main className="flexbox">
           <Header />
@@ -21,7 +19,7 @@ class App extends Component {
             <div className="flexbox-item">Hello world!</div>
           </div>
 
-          <footer id="footer" className="App-footer">
+          <footer id="footer">
             Footer
           </footer>
         </main>
