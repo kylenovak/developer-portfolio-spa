@@ -1,0 +1,48 @@
+.skill-panel {
+  width: 50%;
+  padding: 40px 20px;
+  margin: 0 10px;
+  overflow: auto;
+  background-color: rgb(235, 235, 235);
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.5s;
+}
+
+.skill-panel:hover {
+  background-color: rgba(34, 34, 34, 0.75);
+}
+
+.skill-panel ul {
+  margin-bottom: 0;
+}
+
+.skill-panel:hover h3,
+.skill-panel:hover span,
+.skill-panel:hover i {
+  color: #fff;
+}
+
+.skill-panel h3 {
+  text-align: center;
+  margin-top: 0;
+  transition: color 0.5s;
+}
+
+.skill-panel span,
+.skill-panel i {
+  transition: color 0.5s;
+}
+
+.skill-panel ul {
+  padding: 0;
+  list-style-type: none;
+}
+
+.skill-panel li {
+  padding: 5px 0;
+}
+
+.skill-panel li:last-child {
+  padding-bottom: 0;
+}

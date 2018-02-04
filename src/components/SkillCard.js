@@ -1,16 +1,16 @@
 import React, { Component } from 'react';
-import '../styles/skill.css';
+import '../styles/skillCard.css';
 
-class Skill extends Component {
+class SkillCard extends Component {
   render() {
     return (
-      <div className="skill">
+      <div className="skill-card">
         <i className={`fas fa-${this.props.icon}`}></i>
-        <h3>{this.props.title}</h3>
+        <h3>{this.props.skillName}</h3>
         <p>{this.props.children}</p>
       </div>
     );
   }
 }
 
-export default Skill;
+export default SkillCard;

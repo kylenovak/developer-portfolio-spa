@@ -6,8 +6,16 @@
 }
 
 a {
-   outline: 0;
-	 -moz-outline-style: none;
+	outline: 0;
+	-moz-outline-style: none;
+}
+
+*:focus {
+  outline: 0 !important;
+}
+
+*::-moz-focus-inner {
+	border: 0;
 }
 
 *::selection {
@@ -29,6 +37,7 @@ html, body, #root
 body
 {
   font-family: 'Open Sans', sans-serif;
+	color: #222;
 }
 
 h1, h2, h3 {

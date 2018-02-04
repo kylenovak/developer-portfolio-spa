@@ -1,15 +1,13 @@
 import React, { Component } from 'react';
 import '../styles/connectButton.css';
-import LinkScroll from './LinkScroll';
+const scrollToHash = require('../services/scrollToHash');
 
 class ConnectButton extends Component {
   render() {
     return (
-      <span id="connect-button">
-        <LinkScroll to="/contact" title="Connect with Kyle">
-          <i className="far fa-comments"></i> Connect
-        </LinkScroll>
-      </span>
+      <button id="connect-button" onClick={() => scrollToHash('#contact')} title="Connect with Kyle">
+        <i className="far fa-comments"></i> Connect
+      </button>
     );
   }
 }

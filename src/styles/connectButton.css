@@ -2,14 +2,16 @@
   position: absolute;
   top: 25px;
   right: 20px;
-}
-
-#connect-button a {
+  font-family: 'Open Sans', sans-serif;
+  outline: none;
+  cursor: pointer;
   padding: 10px;
   font-size: 1em;
   color: #fff;
   text-decoration: none;
   display: inline-block;
+  font-weight: normal;
+  font-size: 16px;
   text-shadow: 1px 1px 1px #005E9C;
   background-color: #0077b5;
   border: 1px solid #005E9C;
@@ -17,7 +19,7 @@
   border-radius: 5px;
 }
 
-#connect-button a:active {
+#connect-button:active {
   margin-top: 4px;
   background-color: #005E9C;
   border-bottom: 1px solid #005E9C;

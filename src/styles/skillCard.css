@@ -1,6 +1,5 @@
-.skill {
+.skill-card {
   width: 33%;
-  color: #000;
   padding: 20px;
   margin: 0 10px;
   overflow: auto;
@@ -11,21 +10,21 @@
   transition: background-color 0.5s;
 }
 
-.skill:hover {
+.skill-card:hover {
   background-color: rgba(34, 34, 34, 0.75);
 }
 
-.skill:hover i {
+.skill-card:hover i {
   color: #fff;
   background-color: rgba(0, 119, 181, 0.75);
 }
 
-.skill:hover h3,
-.skill:hover p {
+.skill-card:hover h3,
+.skill-card:hover p {
   color: #fff;
 }
 
-.skill i {
+.skill-card i {
   color: #0077b5;
   padding: 40px;
   margin: 20px 0;
@@ -36,11 +35,11 @@
   transition: color 0.5s, background-color 0.5s;
 }
 
-.skill h3 {
+.skill-card h3 {
   margin: 0;
   transition: color 0.5s;
 }
 
-.skill p {
+.skill-card p {
   transition: color 0.5s;
 }

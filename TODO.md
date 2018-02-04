@@ -3,13 +3,6 @@ KJN TODO:
 BONUS:
 1.) add some FADE-UP effects to the content in each section; i.e. as the user scrolls to that section, fade up the content. do this to all content starting at SKILLS section (or start right after the 3 bubble skill cards).
 
-NOTE!
-FIX THESE FIRST:
-b.) start button (down arrow scroll) - dont make it a LinkScroll, make it do a click event handle to a dom element (i.e. nav); this shouldnt be a URL link -- it should scroll to right above the blue nav bar (at which point, 1px scroll down more and the header becomes STICKY).
-
-1. Skills section
-   1.a Languages sub section (make horizontal/stacked bar chart)
-   1.b Frameworks/libraries sub section (make pie chart, use D3?)
 2. Experience section
    2.a Professional Experience sub section (make slider to slide over each job with added logo/info/key-bullet-points about the experience)
    2.b Education sub section (add MSU logo)

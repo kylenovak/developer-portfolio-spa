@@ -1,0 +1,9 @@
+.skill-name {
+  display: inline-block;
+  margin-bottom: 5px;
+}
+
+.skill-name i {
+  margin-right: 5px;
+  color: rgba(34, 34, 34, 0.5);
+}

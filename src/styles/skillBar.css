@@ -1,0 +1,26 @@
+.skill-bar-wrapper,
+.skill-bar {
+  display: block;
+  height: 5px;
+}
+
+.skill-bar-wrapper {
+  position: relative;
+  background-color: rgb(34, 34, 34, 0.25);
+  margin-bottom: 15px;
+}
+
+.skill-bar {
+  background-color: #0077b5;
+}
+
+.skill-panel li:last-child .skill-bar-wrapper {
+  margin-bottom: 0;
+}
+
+.skill-bar-level {
+  color: rgb(34, 34, 34, 0.5);
+  position: absolute;
+  right: 0;
+  top: -25px;
+}
