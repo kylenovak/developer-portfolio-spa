@@ -29,6 +29,6 @@
  -moz-transform: translateZ(-1px) scale(2);
  transform: translateZ(-1px) scale(2);
 
- -webkit-filter: grayscale(50%); /* Chrome, Safari, Opera */
+ -webkit-filter: grayscale(100%); /* Chrome, Safari, Opera */
  filter: grayscale(100%);
 }

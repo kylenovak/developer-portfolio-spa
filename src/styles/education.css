@@ -1,0 +1,53 @@
+#education {
+  background-color: #fff;
+  padding-bottom: 40px;
+}
+
+#education .header-wrapper {
+  position: relative;
+  background-color: rgb(235, 235, 235);
+}
+
+#education header h2 {
+  position: relative;
+  color: #222;
+  margin: 0;
+  padding: 40px 0;
+}
+
+#education header h2 i {
+  margin-right: 5px;
+  color: #0077b5;
+}
+
+#education section {
+  padding-bottom: 20px;
+}
+
+#education .caret {
+  position: absolute;
+  background-color: transparent;
+  padding: 0;
+  bottom: -40px;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-left: 40px solid transparent;
+  border-right: 40px solid transparent;
+  border-top: 40px solid rgb(235, 235, 235);
+}
+
+#education img {
+  -webkit-filter: grayscale(100%); /* Chrome, Safari, Opera */
+  filter: grayscale(100%);
+
+  width: auto;
+  height: 75px;
+
+  transition: filter 0.5s;
+}
+
+#education img:hover {
+  -webkit-filter: grayscale(0%); /* Chrome, Safari, Opera */
+  filter: grayscale(0%);
+}

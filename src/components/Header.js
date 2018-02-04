@@ -3,7 +3,6 @@ import Logo from './Logo';
 import ConnectButton from './ConnectButton';
 import Welcome from './Welcome';
 import Navigation from './Navigation';
-import '../styles/header.css';
 
 class Header extends Component {
   render() {

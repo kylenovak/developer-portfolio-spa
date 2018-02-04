@@ -1,27 +1,27 @@
-#skills {
-  background-color: #fff;
+#projects {
+  background-color: rgb(235, 235, 235);
   padding-bottom: 40px;
 }
 
-#skills header h2 {
+#projects header h2 {
   position: relative;
   padding: 20px;
   text-align: center;
 }
 
-#skills header h2 span {
-  background-color: #fff;
+#projects header h2 span {
+  background-color: rgb(235, 235, 235);
   padding: 0 15px;
   position: relative;
   z-index: 1;
 }
 
-#skills header h2 span i {
+#projects header h2 span i {
   margin-right: 5px;
   color: #0077b5;
 }
 
-#skills header h2:before {
+#projects header h2:before {
   content: "";
   display: block;
   border-bottom: 2px solid #222222;
@@ -32,6 +32,6 @@
   right: 10%;
 }
 
-#skills section {
+#projects section {
   padding-bottom: 20px;
 }

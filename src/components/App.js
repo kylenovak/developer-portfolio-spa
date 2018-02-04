@@ -1,6 +1,11 @@
 import React, { Component } from 'react';
 import Header from './Header';
 import Skills from './Skills';
+import Experience from './Experience';
+import Education from './Education';
+import Projects from './Projects';
+import About from './About';
+import Contact from './Contact';
 import '../styles/app.css';
 
 class App extends Component {
@@ -12,12 +17,11 @@ class App extends Component {
         <main className="flexbox">
           <Header />
           <Skills />
-
-          <div className="flexbox-item fill-area flex-column">
-            <div className="flexbox-item">Hello world!</div>
-            <div className="flexbox-item">Hello world!</div>
-            <div className="flexbox-item">Hello world!</div>
-          </div>
+          <Experience />
+          <Education />
+          <Projects />
+          <About />
+          <Contact />
 
           <footer id="footer">
             Footer
