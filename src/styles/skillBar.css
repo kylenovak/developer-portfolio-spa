@@ -14,7 +14,7 @@
   background-color: #0077b5;
 }
 
-.skill-panel li:last-child .skill-bar-wrapper {
+li:last-child .skill-bar-wrapper {
   margin-bottom: 0;
 }
 

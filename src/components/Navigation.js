@@ -79,7 +79,7 @@ class Navigation extends Component {
   render() {
     return (
       <nav id="navigation">
-        <ul className="flexbox-item flex-row" onClick={this.handleClick}>
+        <ul className="flexbox-item flex-row container" onClick={this.handleClick}>
           <li id="nav-home" title="Home">
             <NavLink exact to="/"><i className="fas fa-home"></i> Home</NavLink>
           </li>

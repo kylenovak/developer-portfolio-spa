@@ -59,6 +59,26 @@ h1, h2, h3 {
   z-index: 999;
 }
 
+.container {
+	max-width: 1000px;
+	margin: 0 auto;
+}
+
+img.gray {
+  -webkit-filter: grayscale(100%); /* Chrome, Safari, Opera */
+  filter: grayscale(100%);
+
+  width: auto;
+  height: 50px;
+
+  transition: filter 0.5s;
+}
+
+img.gray:hover {
+  -webkit-filter: grayscale(0%); /* Chrome, Safari, Opera */
+  filter: grayscale(0%);
+}
+
 .flexbox
 {
   width: 100%;
@@ -73,18 +93,16 @@ h1, h2, h3 {
   flex: 1;
 }
 
+.flexbox-item.flex-row {
+	flex-direction: row;
+}
+
+.flexbox-item.flex-column {
+	flex-direction: column;
+}
+
 .fill-area
 {
   display: flex;
   flex-direction: row;
-}
-
-.flexbox-item.flex-row {
-  flex-direction: row;
-  max-width: 1000px;
-  margin: 0 auto;
-}
-
-.flexbox-item.flex-column {
-  flex-direction: column;
 }

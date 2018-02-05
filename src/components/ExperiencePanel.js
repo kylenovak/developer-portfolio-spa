@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import '../styles/panel.css';
 
-class SkillPanel extends Component {
+class ExperiencePanel extends Component {
   render() {
     return (
       <div className="panel">
@@ -14,4 +14,4 @@ class SkillPanel extends Component {
   }
 }
 
-export default SkillPanel;
+export default ExperiencePanel;

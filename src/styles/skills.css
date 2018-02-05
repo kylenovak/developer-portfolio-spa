@@ -1,37 +1,11 @@
 #skills {
   background-color: #fff;
-  padding-bottom: 40px;
-}
-
-#skills header h2 {
-  position: relative;
-  padding: 20px;
-  text-align: center;
-}
-
-#skills header h2 span {
-  background-color: #fff;
-  padding: 0 15px;
-  position: relative;
-  z-index: 1;
-}
-
-#skills header h2 span i {
-  margin-right: 5px;
-  color: #0077b5;
-}
-
-#skills header h2:before {
-  content: "";
-  display: block;
-  border-bottom: 2px solid #222222;
-  position: absolute;
-  top: 50%;
-  width: 80%;
-  left: 10%;
-  right: 10%;
 }
 
 #skills section {
   padding-bottom: 20px;
+}
+
+#skills section:last-child {
+  padding-bottom: 0;
 }

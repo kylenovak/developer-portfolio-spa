@@ -5,7 +5,7 @@ class Contact extends Component {
   render() {
     return (
       <section id="contact">
-        <header className="flexbox-item flex-row">
+        <header className="flexbox-item flex-row container">
           <h2><span><i className="fas fa-hashtag"></i> Contact Me</span></h2>
         </header>
 

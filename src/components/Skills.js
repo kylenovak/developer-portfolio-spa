@@ -1,21 +1,18 @@
 import React, { Component } from 'react';
+import SectionHeader from './SectionHeader';
+import SectionRow from './SectionRow';
 import SkillCard from './SkillCard';
 import SkillPanel from './SkillPanel';
-import SkillName from './SkillName';
-import SkillBar from './SkillBar';
+import Skill from './Skill';
 import '../styles/skills.css';
-import '../styles/skillPanel.css';
-import '../styles/skillBar.css';
 
 class Skills extends Component {
   render() {
     return (
       <section id="skills">
-        <header className="flexbox-item flex-row">
-          <h2><span><i className="fas fa-hashtag"></i> Technical Skills</span></h2>
-        </header>
+        <SectionHeader sectionTitle="Technical Skills" />
 
-        <section className="flexbox-item fill-area flex-row">
+        <SectionRow>
           <SkillCard skillName="Web Applications" icon="laptop">
             I develop apps by using web technologies; such as, JavaScript, ReactJS, NodeJS, HTML, and CSS.
           </SkillCard>
@@ -27,31 +24,27 @@ class Skills extends Component {
           <SkillCard skillName="Software Engineering" icon="building">
             I am always learning. I read and study software engineering principles and best practices.
           </SkillCard>
-        </section>
+        </SectionRow>
 
-        <section className="panels flexbox-item fill-area flex-row">
+        <SectionRow>
           <SkillPanel panelName="Programming Languages">
-            <ul>
-              <li><SkillName name="JavaScript" /><SkillBar level="95" /></li>
-              <li><SkillName name="Python" /><SkillBar level="90" /></li>
-              <li><SkillName name="Java" /><SkillBar level="75" /></li>
-              <li><SkillName name="C++" /><SkillBar level="60" /></li>
-              <li><SkillName name="PHP" /><SkillBar level="70" /></li>
-              <li><SkillName name="SQL" /><SkillBar level="85" /></li>
-            </ul>
+            <Skill name="JavaScript" level="95" />
+            <Skill name="Python" level="90" />
+            <Skill name="Java" level="75" />
+            <Skill name="C++" level="60" />
+            <Skill name="PHP" level="70" />
+            <Skill name="SQL" level="85" />
           </SkillPanel>
 
           <SkillPanel panelName="Frameworks & Web Technologies">
-            <ul>
-              <li><SkillName name="ReactJS" /><SkillBar level="90" /></li>
-              <li><SkillName name="AngularJS" /><SkillBar level="60" /></li>
-              <li><SkillName name="ExpressJS" /><SkillBar level="85" /></li>
-              <li><SkillName name="NodeJS" /><SkillBar level="70" /></li>
-              <li><SkillName name="HTML" /><SkillBar level="90" /></li>
-              <li><SkillName name="CSS" /><SkillBar level="95" /></li>
-            </ul>
+            <Skill name="ReactJS" level="90" />
+            <Skill name="AngularJS" level="60" />
+            <Skill name="ExpressJS" level="85" />
+            <Skill name="NodeJS" level="70" />
+            <Skill name="HTML" level="90" />
+            <Skill name="CSS" level="95" />
           </SkillPanel>
-        </section>
+        </SectionRow>
       </section>
     );
   }

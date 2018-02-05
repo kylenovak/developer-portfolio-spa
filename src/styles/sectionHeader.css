@@ -1,0 +1,20 @@
+header.section-header h2 {
+  position: relative;
+  border-bottom: 2px solid rgba(34, 34, 34, 0.75);
+  margin: 40px 10px 20px 10px;
+}
+
+header.section-header h2 span {
+  color: #fff;
+  background-color: rgba(34, 34, 34, 0.75);
+  border-radius: 5px 5px 0 0;
+  padding: 20px;
+  display: inline-block;
+  position: relative;
+  z-index: 1;
+}
+
+header.section-header h2 span i {
+  margin-right: 5px;
+  color: #0077b5;
+}

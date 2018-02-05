@@ -3,6 +3,12 @@ KJN TODO:
 BONUS:
 1.) add some FADE-UP effects to the content in each section; i.e. as the user scrolls to that section, fade up the content. do this to all content starting at SKILLS section (or start right after the 3 bubble skill cards).
 
+
+*** Projects = image slider
+*** About = chat bubble
+*** contact = goog map / contact form
+
+
 2. Experience section
    2.a Professional Experience sub section (make slider to slide over each job with added logo/info/key-bullet-points about the experience)
    2.b Education sub section (add MSU logo)

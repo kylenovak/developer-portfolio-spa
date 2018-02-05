@@ -5,7 +5,7 @@ class Projects extends Component {
   render() {
     return (
       <section id="projects">
-        <header className="flexbox-item flex-row">
+        <header className="flexbox-item flex-row container">
           <h2><span><i className="fas fa-hashtag"></i> Projects</span></h2>
         </header>
 
