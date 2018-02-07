@@ -1,11 +1,19 @@
 #experience {
-  background-color: #fff;
+  background-color: rgb(235, 235, 235);
 }
 
 #experience section {
-  padding-bottom: 20px;
+  padding-bottom: 40px;
 }
 
-#experience section:last-child {
-  padding-bottom: 0;
+#experience header span {
+  background-color: rgba(0, 119, 181, 0.75);
+}
+
+#experience header h2 {
+  border-color: rgba(0, 119, 181, 0.75);
+}
+
+#experience header i {
+  color: #222;
 }

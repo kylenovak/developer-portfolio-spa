@@ -1,0 +1,47 @@
+#footer {
+  position: relative;
+  background-color: #222;
+  color: rgb(175, 175, 175);
+  width: 100%;
+}
+
+#footer section {
+
+}
+
+
+.footer-sub-col {
+  padding: 20px 0;
+  overflow: auto;
+}
+
+.footer-sub-col a {
+  color: #0077b5;
+  text-decoration: none;
+  padding-bottom: 2px;
+  font-weight: bold;
+  transition: 0.5s color;
+}
+
+.footer-sub-col a:hover {
+  color: #fff;
+}
+
+#copyright.footer-sub-col {
+  width: 33%;
+    text-align: center;
+}
+
+#built-with.footer-sub-col {
+  width: 33%;
+  text-align: center;
+}
+
+#credits.footer-sub-col {
+  width: 33%;
+  text-align: center;
+}
+
+#built-with i {
+  color: #0077b5;
+}

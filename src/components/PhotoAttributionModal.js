@@ -1,25 +1,26 @@
 import React, { Component } from 'react';
+import Link from './Link';
 import '../styles/photoAttributionModal.css';
 
 class PhotoAttributionModal extends Component {
   render() {
     return (
       <div id="photo-attribution-modal" className={this.props.show ? '' : 'hidden'}>
-        <a href="https://www.flickr.com/photos/132084522@N05/17275578342" target="_blank" rel="noopener noreferrer" title="Source">
+        <Link href="https://www.flickr.com/photos/132084522@N05/17275578342" title="Source">
           "Gateway Arch - St. Louis - Missouri"
-        </a>
+        </Link>
 
         <span> by </span>
 
-        <a href="https://www.flickr.com/photos/132084522@N05/" target="_blank" rel="noopener noreferrer" title="Author">
+        <Link href="https://www.flickr.com/photos/132084522@N05/" title="Author">
           Sam Valadi
-        </a>
+        </Link>
 
         <span>, used under </span>
 
-        <a href="https://creativecommons.org/licenses/by/2.0/" target="_blank" rel="noopener noreferrer" title="License">
+        <Link href="https://creativecommons.org/licenses/by/2.0/" title="License">
           CC BY
-        </a>
+        </Link>
 
         <span> / Desaturated from original</span>
 

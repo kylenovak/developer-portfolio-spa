@@ -1,7 +1,19 @@
 #education {
-  background-color: #fff;
+  background-color: rgba(0, 119, 181, 0.25);
 }
 
 #education section {
-  padding-bottom: 20px;
+  padding-bottom: 40px;
+}
+
+#education header span {
+  background-color: rgba(34, 34, 34, 0.75);
+}
+
+#education header h2 {
+  border-color: rgba(34, 34, 34, 0.75);
+}
+
+#education header i {
+  color: #0077b5;
 }

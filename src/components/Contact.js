@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Map from './Map';
 import '../styles/contact.css';
 
 class Contact extends Component {
@@ -8,7 +9,7 @@ class Contact extends Component {
         <header className="flexbox-item flex-row container">
           <h2><span><i className="fas fa-hashtag"></i> Contact Me</span></h2>
         </header>
-
+        <Map />
       </section>
     );
   }

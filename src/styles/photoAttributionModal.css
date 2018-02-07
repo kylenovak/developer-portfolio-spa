@@ -2,13 +2,20 @@
   position: absolute;
   top: -120px;
   right: 0;
-  background-color: rgb(34, 34, 34, 0.75) !important;
+  color: #222;
+    text-shadow: none !important;
+  background-color: rgba(255, 255, 255, 0.75) !important;
   box-shadow: none !important;
   border-radius: 3px;
   height: auto;
   width: 300px;
   padding: 15px 10px !important;
   z-index: 999;
+}
+
+#photo-attribution-modal a {
+  color: #222 !important;
+  text-shadow: none !important;
 }
 
 #photo-attribution-modal .caret {
@@ -21,5 +28,5 @@
   height: 0;
   border-left: 20px solid transparent;
   border-right: 20px solid transparent;
-  border-top: 20px solid rgb(34, 34, 34, 0.75);
+  border-top: 20px solid rgba(255, 255, 255, 0.75);
 }
