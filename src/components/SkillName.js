@@ -5,7 +5,7 @@ class SkillName extends Component {
   render() {
     return (
       <span className="skill-name">
-        <i class="far fa-check-square"></i>{` ${this.props.name} `}
+        <i className="far fa-check-square"></i>{` ${this.props.name} `}
       </span>
     );
   }

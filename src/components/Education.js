@@ -9,7 +9,6 @@ class Education extends Component {
     return (
       <section id="education">
         <SectionHeader sectionTitle="Education" />
-
         <SectionRow>
           <Link href="https://www.missouristate.edu/">
             <img id="msu" className="gray" src={require('../images/missouri_state_university.png')} title="Missouri State University" alt="Missouri State University" />

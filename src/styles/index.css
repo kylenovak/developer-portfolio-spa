@@ -20,7 +20,7 @@ a {
 
 *::selection {
 	color: #fff;
-  background-color: rgba(0, 119, 181, 0.75);
+  background-color: #222;
 }
 
 html, body, #root
@@ -64,7 +64,7 @@ h1, h2, h3 {
 	margin: 0 auto;
 }
 
-img.gray {
+img.grayscale {
   -webkit-filter: grayscale(100%); /* Chrome, Safari, Opera */
   filter: grayscale(100%);
 
@@ -74,7 +74,7 @@ img.gray {
   transition: filter 0.5s;
 }
 
-img.gray:hover {
+img.grayscale:hover {
   -webkit-filter: grayscale(0%); /* Chrome, Safari, Opera */
   filter: grayscale(0%);
 }
