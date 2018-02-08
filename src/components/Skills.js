@@ -21,7 +21,7 @@ class Skills extends Component {
             I create games for fun, as a hobby in my free-time, and as a way to improve my coding skills.
           </SkillCard>
 
-          <SkillCard skillName="Software Engineering" icon="building">
+          <SkillCard skillName="Software Engineering" icon="book">
             I am always learning. I read and study software engineering principles and best practices.
           </SkillCard>
         </SectionRow>
