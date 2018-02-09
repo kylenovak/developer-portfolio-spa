@@ -1,0 +1,26 @@
+#up-arrow {
+  position: absolute;
+  right: 25px;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 2em;
+  padding: 1px 13px;
+  cursor: pointer;
+  z-index: 1;
+  background-color: rgba(0, 119, 181, 0.75);
+  transition: background-color 0.5s, bottom 0.5s, opacity 0.5s;
+}
+
+#up-arrow:hover {
+  background-color: #0077b5;
+}
+
+#up-arrow.hide {
+  bottom: -50px;
+  opacity: 0;
+}
+
+#up-arrow.show {
+  bottom: 15px;
+  opacity: 1;
+}

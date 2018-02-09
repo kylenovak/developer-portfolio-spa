@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
 import SectionHeader from './SectionHeader';
 import SectionRow from './SectionRow';
-import Position from './Position';
-import PositionImage from './PositionImage';
-import PositionTools from './PositionTools';
-import PositionDuration from './PositionDuration';
+import SliderCard from './SliderCard';
+import SliderCardImage from './SliderCardImage';
+import SliderCardList from './SliderCardList';
+import SliderCardLabel from './SliderCardLabel';
+import '../styles/sliderCard.css';
 import '../styles/experience.css';
 
 class Experience extends Component {
@@ -13,19 +14,19 @@ class Experience extends Component {
       <section id="experience">
         <SectionHeader sectionTitle="Professional Experience" />
         <SectionRow>
-          <Position title="Software Engineer" company="The Boeing Company">
-            <PositionImage href="https://www.boeing.com" src="boeing.png" company="The Boeing Company" />
-            <PositionTools>
+          <SliderCard title="Software Engineer" subTitle="The Boeing Company">
+            <SliderCardImage href="https://www.boeing.com" src="boeing.png" subTitle="The Boeing Company" />
+            <SliderCardList title="Tools & Technologies">
               <li>C++</li>
               <li>Python</li>
               <li>Qt</li>
               <li>CMake</li>
-            </PositionTools>
-            <PositionDuration start="June 2017" end="Present" />
-          </Position>
-          <Position title="Software Developer" company="O'Reilly Auto Parts">
-            <PositionImage href="https://www.oreillyauto.com" src="oreilly.png" company="O'Reilly Auto Parts" />
-            <PositionTools>
+            </SliderCardList>
+            <SliderCardLabel text="June 2017 - Present" />
+          </SliderCard>
+          <SliderCard title="Full-stack Software Developer" subTitle="O'Reilly Auto Parts">
+            <SliderCardImage href="https://www.oreillyauto.com" src="oreilly.png" subTitle="O'Reilly Auto Parts" />
+            <SliderCardList title="Tools & Technologies">
               <li>Java</li>
               <li>JavaScript</li>
               <li>jQuery</li>
@@ -33,20 +34,20 @@ class Experience extends Component {
               <li>SQL</li>
               <li>HTML</li>
               <li>CSS</li>
-            </PositionTools>
-            <PositionDuration start="May 2015" end="May 2017" />
-          </Position>
-          <Position title="Intern Software Developer" company="O'Reilly Auto Parts">
-            <PositionImage href="https://www.oreillyauto.com" src="oreilly.png" company="O'Reilly Auto Parts" />
-            <PositionTools>
+            </SliderCardList>
+            <SliderCardLabel text="May 2015 - May 2017" />
+          </SliderCard>
+          <SliderCard title="Intern Software Developer" subTitle="O'Reilly Auto Parts">
+            <SliderCardImage href="https://www.oreillyauto.com" src="oreilly.png" subTitle="O'Reilly Auto Parts" />
+            <SliderCardList title="Tools & Technologies">
               <li>Java</li>
               <li>JavaScript</li>
               <li>SQL</li>
               <li>HTML</li>
               <li>CSS</li>
-            </PositionTools>
-            <PositionDuration start="Nov 2014" end="May 2015" />
-          </Position>
+            </SliderCardList>
+            <SliderCardLabel text="Nov 2014 - May 2015" />
+          </SliderCard>
         </SectionRow>
       </section>
     );

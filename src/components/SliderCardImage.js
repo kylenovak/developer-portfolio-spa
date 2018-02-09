@@ -1,16 +1,16 @@
 import React, { Component } from 'react';
 import Link from './Link';
 
-class PositionImage extends Component {
+class SliderCardImage extends Component {
   render() {
     return (
       <div className="img-wrapper">
         <Link href={this.props.href}>
-          <img className="grayscale" src={require(`../images/${this.props.src}`)} title={this.props.company} alt={this.props.company} />
+          <img className="grayscale" src={require(`../images/${this.props.src}`)} title={this.props.subTitle} alt={this.props.subTitle} />
         </Link>
       </div>
     );
   }
 }
 
-export default PositionImage;
+export default SliderCardImage;

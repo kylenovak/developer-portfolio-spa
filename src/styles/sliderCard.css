@@ -1,0 +1,89 @@
+.slider-card-wrapper {
+  position: relative;
+  width: 33%;
+  text-align: center;
+  margin: 0 10px;
+  border: 2px solid rgba(34, 34, 34, 0.75);
+  border-radius: 5px;
+  background-color: #fff;
+  transition: border 0.5s;
+}
+
+.slider-card-wrapper:hover {
+  border: 2px solid #0077b5;
+}
+
+.slider-card-wrapper ul {
+  display: inline-block;
+  padding: 0;
+  margin-top: 0;
+  text-align: left;
+  width: auto;
+
+  -webkit-column-count: 2; /* Chrome, Safari, Opera */
+  -moz-column-count: 2; /* Firefox */
+  column-count: 2;
+  -webkit-column-gap: 40px; /* Chrome, Safari, Opera */
+  -moz-column-gap: 40px; /* Firefox */
+  column-gap: 40px;
+}
+
+.slider-card-wrapper ul li {
+  padding: 0;
+}
+
+.slider-card-wrapper h3 {
+  margin: 0;
+  background-color: rgba(34, 34, 34, 0.75);
+  padding: 20px;
+  color: #fff;
+  transition: background-color 0.5s;
+}
+
+.slider-card-wrapper:hover h3  {
+  background-color: #0077b5;
+}
+
+.slider-card-wrapper h4 {
+  margin: 0;
+}
+
+.slider-card-wrapper h5 {
+  border-top: 2px solid rgb(34, 34, 34, 0.75);
+  margin-top: 15px;
+  padding-top: 15px;
+}
+
+.slider-card {
+  padding: 20px;
+  overflow: auto;
+}
+
+.slider-card-label {
+  width: 100%;
+  position: absolute;
+  bottom: -16px;
+  left: 50%;
+  display: block;
+  text-align: center;
+}
+
+.slider-card-label span {
+  position: relative;
+  display: inline-block;
+  left: -50%;
+  padding: 5px 10px;
+  border-radius: 5px;
+  background-color: rgba(74, 74, 74);
+  color: #fff;
+  transition: background-color 0.5s;
+}
+
+.slider-card-wrapper:hover .slider-card-label span {
+  background-color: #0077b5;
+}
+
+.slider-card-wrapper img {
+  margin: 20px 0;
+  margin-bottom: 0;
+}

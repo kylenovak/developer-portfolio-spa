@@ -13,6 +13,9 @@ BONUS:
 *** About = chat bubble
 *** contact = goog map / contact form
 
+FIX THIS:
+1.) remove the hardcoded y > 800 in ArrowUp.js because the distance to the nav bar can change based on screen width (so make this generalized).
+
 
 2. Experience section
    2.a Professional Experience sub section (make slider to slide over each job with added logo/info/key-bullet-points about the experience)

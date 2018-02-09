@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 
-class PositionTools extends Component {
+class SliderCardList extends Component {
   render() {
     return (
       <div>
-        <h5>Tools & Technologies</h5>
+        <h5>{this.props.title}</h5>
         <ul>
           {this.props.children}
         </ul>
@@ -13,4 +13,4 @@ class PositionTools extends Component {
   }
 }
 
-export default PositionTools;
+export default SliderCardList;
