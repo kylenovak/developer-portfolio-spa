@@ -3,6 +3,7 @@ import SectionHeader from './SectionHeader';
 import SectionRow from './SectionRow';
 import SliderCard from './SliderCard';
 import SliderCardList from './SliderCardList';
+import SliderCardLabel from './SliderCardLabel';
 import Link from './Link';
 import '../styles/sliderCard.css';
 import '../styles/projects.css';
@@ -13,8 +14,8 @@ class Projects extends Component {
       <section id="projects">
         <SectionHeader sectionTitle="Independent Projects" />
         <SectionRow>
-          <SliderCard title="R&#233;sum&#233; Web App" subTitle="www.kylejnovak.com">
-            <p>I rebuilt my personal portfolio site using a modern ES6 tech stack.</p>
+          <SliderCard title="R&#233;sum&#233; SPA" subTitle="www.kylejnovak.com">
+            <p>I rebuilt my portfolio site into a SPA (Single Page Application) by using a modern JavaScript tech stack.</p>
             <SliderCardList title="Tools & Technologies">
               <li>JavaScript</li>
               <li>ReactJS</li>
@@ -36,9 +37,11 @@ class Projects extends Component {
               <li>JavaScript</li>
               <li>jQuery</li>
             </SliderCardList>
-            <Link href="https://github.com/kylenovak/kylejnovak-personal-portfolio" title="Github source code">
-              <button><i class="fab fa-github-square"></i> View Source</button>
-            </Link>
+            <SliderCardLabel>
+              <Link href="https://github.com/kylenovak/kylejnovak-personal-portfolio" title="Github source code">
+                <button><i class="fab fa-github-square"></i> View Source</button>
+              </Link>
+            </SliderCardLabel>
           </SliderCard>
           <SliderCard title="Wordpress Blog" subTitle="novak.codes">
             <p>I designed and built a wordpress child-theme on top of the Genesis theme framework for my blog.</p>
@@ -49,9 +52,11 @@ class Projects extends Component {
               <li>CSS</li>
               <li>HTML</li>
             </SliderCardList>
-            <Link href="https://github.com/kylenovak/novakcodes-theme-project" title="Github source code">
-              <button><i class="fab fa-github-square"></i> View Source</button>
-            </Link>
+            <SliderCardLabel>
+              <Link href="https://github.com/kylenovak/novakcodes-theme-project" title="Github source code">
+                <button><i class="fab fa-github-square"></i> View Source</button>
+              </Link>
+            </SliderCardLabel>
           </SliderCard>
         </SectionRow>
       </section>

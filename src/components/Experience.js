@@ -22,7 +22,7 @@ class Experience extends Component {
               <li>Qt</li>
               <li>CMake</li>
             </SliderCardList>
-            <SliderCardLabel text="June 2017 - Present" />
+            <SliderCardLabel>June 2017 - Present</SliderCardLabel>
           </SliderCard>
           <SliderCard title="Full-stack Software Developer" subTitle="O'Reilly Auto Parts">
             <SliderCardImage href="https://www.oreillyauto.com" src="oreilly.png" subTitle="O'Reilly Auto Parts" />
@@ -35,7 +35,7 @@ class Experience extends Component {
               <li>HTML</li>
               <li>CSS</li>
             </SliderCardList>
-            <SliderCardLabel text="May 2015 - May 2017" />
+            <SliderCardLabel>May 2015 - May 2017</SliderCardLabel>
           </SliderCard>
           <SliderCard title="Intern Software Developer" subTitle="O'Reilly Auto Parts">
             <SliderCardImage href="https://www.oreillyauto.com" src="oreilly.png" subTitle="O'Reilly Auto Parts" />
@@ -46,7 +46,7 @@ class Experience extends Component {
               <li>HTML</li>
               <li>CSS</li>
             </SliderCardList>
-            <SliderCardLabel text="Nov 2014 - May 2015" />
+            <SliderCardLabel>Nov 2014 - May 2015</SliderCardLabel>
           </SliderCard>
         </SectionRow>
       </section>
