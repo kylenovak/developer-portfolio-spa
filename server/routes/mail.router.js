@@ -11,7 +11,6 @@ mailRouter.post('/api/mail', (req, res, next) => {
   console.log(req.body);
   mail.sendMail(email, name, subject, text)
     .then(() => {
-
       res.json({success: true});
     })
     .catch((err) => {
