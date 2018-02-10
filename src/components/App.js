@@ -1,15 +1,15 @@
 import React, { Component } from 'react';
-import Header from './Header';
-import StickyHeader from './StickyHeader';
-import Footer from './Footer';
-import Skills from './Skills';
-import Experience from './Experience';
-import Education from './Education';
-import Projects from './Projects';
-import About from './About';
-import Contact from './Contact';
-import UpArrow from './UpArrow';
-import '../styles/app.css';
+import Header from './partials/header/Header';
+import StickyHeader from './partials/header/StickyHeader';
+import Footer from './partials/footer/Footer';
+import Skills from './partials/skills/Skills';
+import Experience from './partials/experience/Experience';
+import Education from './partials/education/Education';
+import Projects from './partials/projects/Projects';
+import About from './partials/about/About';
+import Contact from './partials/contact/Contact';
+import UpArrow from './partials/arrows/UpArrow';
+import './app.css';
 
 class App extends Component {
   constructor(props) {

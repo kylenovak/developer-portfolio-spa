@@ -1,0 +1,12 @@
+#skills {
+  background-color: #fff;
+  padding-bottom: 60px;
+}
+
+#skills section {
+  padding-bottom: 20px;
+}
+
+#skills section:last-child {
+  padding-bottom: 0;
+}

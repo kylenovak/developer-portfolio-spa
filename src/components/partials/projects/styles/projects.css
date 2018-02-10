@@ -1,0 +1,42 @@
+#projects {
+  background-color: rgb(235, 235, 235);
+}
+
+#projects section {
+  padding-bottom: 60px;
+}
+
+#projects header span {
+  background-color: rgba(0, 119, 181, 1);
+}
+
+#projects header h2 {
+  border-color: rgba(0, 119, 181, 1);
+}
+
+#projects header i {
+  color: #222;
+}
+
+#projects button {
+  margin-top: 5px;
+  background-color: #fff;
+  color: #222;
+  border: 2px solid rgb(84, 84, 84);
+  border-radius: 3px;
+  padding: 10px;
+  cursor: pointer;
+  transition: color 0.5s, background-color 0.5s, border 0.5s;
+}
+
+#projects button:hover {
+  background-color: #0077b5;
+  border: 2px solid #0077b5;
+  color: #fff;
+}
+
+#projects button i {
+  vertical-align: middle;
+  margin-right: 3px;
+  font-size: 1.5em;
+}
