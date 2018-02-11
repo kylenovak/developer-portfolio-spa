@@ -1,15 +1,22 @@
 #contact {
+  background-color: #222;
+}
+
+#contact ::selection {
+  color: #222;
   background-color: #fff;
 }
 
 #contact header h2 {
+  color: #fff;
   position: relative;
   padding: 20px;
+  border: none;
   text-align: center;
 }
 
 #contact header h2 span {
-  background-color: #fff;
+  background-color: #222;
   padding: 0 15px;
   position: relative;
   z-index: 1;
@@ -17,13 +24,13 @@
 
 #contact header h2 span i {
   margin-right: 5px;
-  color: #0077b5;
+  color: #fff;
 }
 
 #contact header h2:before {
   content: "";
   display: block;
-  border-bottom: 2px solid #222222;
+  border-bottom: 2px solid #0077b5;
   position: absolute;
   top: 50%;
   width: 80%;
@@ -33,4 +40,138 @@
 
 #contact section {
   padding-bottom: 20px;
+}
+
+#contact .section-column {
+  margin: 0 10px;
+}
+
+#contact .section-column:first-child {
+  min-width: 60%;
+}
+
+#contact .section-column:nth-child(n+2) {
+  min-width: 40%;
+}
+
+#contact .section-column h3 {
+  margin-top: 0;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#contact .section-column p {
+  margin-top: 0;
+  color: #fff;
+  font-size: 1.25em;
+  font-weight: bold;
+}
+
+#contact-form input,
+#contact-form textarea,
+#contact-form button.submit {
+  color: #fff;
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: 2px solid rgb(44, 44, 44);
+  background-color: rgb(44, 44, 44);
+  font-size: 20px;
+  transition: border 0.5s;
+}
+
+#contact-form textarea {
+  resize: vertical;
+  min-height: 100px;
+  max-height: 400px;
+}
+
+#contact-form input[type="text"],
+#contact-form input[type="email"] {
+
+}
+
+#contact-form input:focus,
+#contact-form textarea:focus {
+  border: 2px solid #0077b5;
+}
+
+#contact-form button.submit {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  text-transform: uppercase;
+  padding: 20px 10px;
+  margin-top: 10px;
+  text-shadow: 1px 1px 1px #005E9C;
+  background-color: #0077b5;
+  border: 1px solid #005E9C;
+  border-bottom: 5px solid #005E9C;
+  color: #fff;
+  transition: background-color 0.5s;
+}
+
+#contact-form button.submit i {
+  font-size: 1.25em;
+  vertical-align: middle;
+  margin-right: 5px;
+}
+
+#contact-form button.submit:active {
+  margin-top: 14px;
+  background-color: #005E9C;
+  border-bottom: 1px solid #005E9C;
+  box-shadow: 0 0 5px rgba(34, 34, 34, 0.5) inset;
+}
+
+#contact-form button.submit:hover,
+#contact-form button.submit:focus {
+  background-color: #0077b5;
+}
+
+#contact-form ::-webkit-input-placeholder {
+  color: rgb(104, 104, 104);
+}
+
+#contact-form ::-moz-placeholder {
+  color: rgb(104, 104, 104);
+}
+
+#contact-form :-ms-input-placeholder {
+  color: rgb(104, 104, 104);
+}
+
+#contact-form :-moz-placeholder {
+  color: rgb(104, 104, 104);
+}
+
+#contact .social-links button {
+  width: 100%;
+  margin-bottom: 20px;
+  background-color: #222;
+  border: 2px solid #0077b5;
+  color: #fff;
+  border-radius: 5px;
+  padding: 20px;
+  font-size: 1.15em;
+  cursor: pointer;
+  transition: background-color 0.5s;
+}
+
+#contact .social-links button i {
+  margin-right: 5px;
+  font-size: 1.75em;
+  vertical-align: middle;
+  color: #0077b5;
+  transition: color 0.5s;
+}
+
+#contact .social-links button:hover {
+  background-color: #0077b5;
+}
+
+#contact .social-links button:hover i {
+  color: #fff;
 }

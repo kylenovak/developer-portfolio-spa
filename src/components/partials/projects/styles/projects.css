@@ -1,5 +1,6 @@
 #projects {
   background-color: rgb(235, 235, 235);
+  border-bottom: 5px dashed #0077b5;
 }
 
 #projects section {

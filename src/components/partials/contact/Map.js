@@ -7,7 +7,7 @@ class Map extends Component {
   render() {
     return (
       <GoogleMap
-        defaultZoom={10}
+        defaultZoom={8}
         defaultCenter={{ lat: 38.624716, lng: -90.184793 }}
         defaultOptions={{ styles: mapStyle }}
       >

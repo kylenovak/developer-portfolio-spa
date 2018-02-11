@@ -1,69 +1,81 @@
 #about {
-  border-top: 2px solid #222;
-  border-bottom: 2px solid #222;
-  background-color: rgb(64, 64, 64);
-  padding-bottom: 40px;
+  background-color: #0077b5;
+  border-bottom: 5px dashed #222;
 }
 
 #about header h2 {
+  color: #fff;
   position: relative;
-  border-radius: 5px;
-  color: #222;
-  background-color: #fff;
-  display: inline-block;
-  width: auto;
-  margin: 0 10px;
-  margin-top: 40px;
-  padding: 40px 20px;
-  border: 2px solid #222;
+  padding: 20px;
+  border: none;
+  text-align: center;
 }
 
-#about header h2 i {
+#about header h2 span {
+  background-color: #0077b5;
+  padding: 0 15px;
+  position: relative;
+  z-index: 1;
+}
+
+#about header h2 span i {
   margin-right: 5px;
-  color: #0077b5;
+  color: #fff;
+}
+
+#about header h2:before {
+  content: "";
+  display: block;
+  border-bottom: 2px solid #fff;
+  position: absolute;
+  top: 50%;
+  width: 80%;
+  left: 10%;
+  right: 10%;
 }
 
 #about section {
   padding-bottom: 20px;
 }
 
-#about .caret {
-  position: absolute;
-  background-color: transparent;
-  padding: 0;
-  bottom: -40px;
-  left: 60px;
-  width: 0;
-  height: 0;
-  border-left: 40px solid transparent;
-  border-right: 40px solid transparent;
-  border-top: 40px solid #222;
+#about .section-column {
+  margin: 0 10px;
 }
 
-#about .caret-inset {
-  position: relative;
-  background-color: transparent;
-  padding: 0;
-  bottom: 3px;
-  left: -37px;
-  width: 0;
-  height: 0;
-  border-left: 37px solid transparent;
-  border-right: 37px solid transparent;
-  border-top: 37px solid #fff;
+#about .section-column:first-child {
+  min-width: 40%;
 }
 
-#about img {
-  -webkit-filter: grayscale(100%); /* Chrome, Safari, Opera */
-  filter: grayscale(100%);
-
-  width: auto;
-  height: 50px;
-
-  transition: filter 0.5s;
+#about .section-column:nth-child(n+2) {
+  min-width: 20%;
 }
 
-#about img:hover {
-  -webkit-filter: grayscale(0%); /* Chrome, Safari, Opera */
-  filter: grayscale(0%);
+#about .section-column:nth-child(n+3) {
+  min-width: 20%;
+}
+
+#about .section-column h3 {
+  margin-top: 0;
+  color: #fff;
+  margin: 0 30px;
+}
+
+#about .section-column p {
+  margin-top: 0;
+  color: #fff;
+  font-size: 1.25em;
+  font-weight: bold;
+}
+
+#about .section-column:first-child p:first-child:first-letter {
+  float: left;
+  font-size: 60px;
+  padding-top: 4px;
+  padding-right: 8px;
+  padding-left: 3px;
+}
+
+#about .section-column ul {
+  color: #fff;
+  list-style-type: circle;
 }

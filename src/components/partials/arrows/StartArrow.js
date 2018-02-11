@@ -6,7 +6,7 @@ class StartArrow extends Component {
   render() {
     return (
       <span id="start-arrow">
-        <span onClick={() => scrollToHash('#navigation')} title="Scroll down for stuff :-P">
+        <span onClick={() => scrollToHash('#navigation')} title="Scroll down">
           <i className="fas fa-angle-down"></i>
         </span>
       </span>

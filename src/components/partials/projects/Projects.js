@@ -13,7 +13,7 @@ class Projects extends Component {
       <section id="projects">
         <SectionHeader sectionTitle="Independent Projects" />
         <SectionRow>
-          <SliderCard title="R&#233;sum&#233; SPA" subTitle="www.kylejnovak.com">
+          <SliderCard title="R&#233;sum&#233; SPA" subTitle="kylejnovak.com">
             <p>I rebuilt my portfolio site into a SPA (Single Page Application) by using a modern JavaScript tech stack.</p>
             <SliderCardList title="Tools & Technologies">
               <li>JavaScript</li>
@@ -24,7 +24,7 @@ class Projects extends Component {
               <li>CSS</li>
             </SliderCardList>
           </SliderCard>
-          <SliderCard title="Portfolio Web App" subTitle="www.kylejnovak.com">
+          <SliderCard title="Portfolio Web App" subTitle="kylejnovak.com">
             <p>This was my original portfolio site that I built with a Python stack.</p>
             <SliderCardList title="Tools & Technologies">
               <li>Python</li>
@@ -37,7 +37,7 @@ class Projects extends Component {
               <li>jQuery</li>
             </SliderCardList>
             <Link href="https://github.com/kylenovak/kylejnovak-personal-portfolio" title="Github source code">
-              <button><i class="fab fa-github-square"></i><span> View Source</span></button>
+              <button><i className="fab fa-github-square"></i><span> View Source</span></button>
             </Link>
           </SliderCard>
           <SliderCard title="Wordpress Blog" subTitle="novak.codes">
@@ -50,7 +50,7 @@ class Projects extends Component {
               <li>HTML</li>
             </SliderCardList>
             <Link href="https://github.com/kylenovak/novakcodes-theme-project" title="Github source code">
-              <button><i class="fab fa-github-square"></i><span> View Source</span></button>
+              <button><i className="fab fa-github-square"></i><span> View Source</span></button>
             </Link>
           </SliderCard>
         </SectionRow>

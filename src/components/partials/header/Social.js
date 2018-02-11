@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Link from '../links/Link';
 import './styles/social.css';
 
 class Social extends Component {
@@ -16,18 +17,18 @@ class Social extends Component {
     return (
       <ul id="social">
         <li>
-          <a href={this.linkedinURL} target="_blank" rel="noopener noreferrer">
-            <button className="Linkedin" title="Connect with me on Linkedin">
+          <Link href={this.linkedinURL} title="Connect with me on Linkedin">
+            <button className="Linkedin">
               <i className="fab fa-linkedin"></i> {this.linkedinButtonText}
             </button>
-          </a>
+          </Link>
         </li>
         <li>
-          <a href={this.twitterURL} target="_blank" rel="noopener noreferrer">
-            <button className="Twitter" title="Follow me on Twitter">
+          <Link href={this.twitterURL} title="Follow me on Twitter">
+            <button className="Twitter">
               <i className="fab fa-twitter-square"></i> {this.twitterButtonText}
             </button>
-          </a>
+          </Link>
         </li>
       </ul>
     );

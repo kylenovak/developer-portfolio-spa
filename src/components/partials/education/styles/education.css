@@ -1,5 +1,7 @@
 #education {
   background-color: #fff;
+  border-top: 2px solid rgb(245, 245, 245);
+  border-bottom: 2px solid rgb(245, 245, 245);
 }
 
 #education section {
