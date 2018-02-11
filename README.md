@@ -2,7 +2,7 @@
 I built a SPA (Single Page Application) with a modern tech stack using JavaScript, ReactJS, ExpressJS, NodeJS, CSS, HTML, and more. I hand coded and designed this app's front-end and back-end. The only CSS framework I used was FontAwesome for some of their awesome icons!
 
 ## Purpose
-The purpose of this project is to highlight my skills and experience as a developer; it is my developer portfolio site reinvented (i had a developer portfolio already being host, but I shut it down so that I could rebuild it with a modern tech stack and redesign it, too).
+The purpose of this project is to highlight my skills and experience as a developer; it is my developer portfolio site reinvented (i had a developer portfolio already being hosted online, but I shut it down so that I could rebuild it with a modern tech stack and redesign it, too).
 
 ## Live
 My project is hosted on Heroku and can be viewed at https://www.kylejnovak.com.
