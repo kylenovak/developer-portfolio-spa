@@ -3,12 +3,12 @@ import Introduction from './Introduction';
 import Social from './Social';
 import PhotoAttribution from './attribution/PhotoAttribution';
 import StartArrow from '../arrows/StartArrow';
-import './styles/welcome.css';
+import './styles/banner.css';
 
-class Welcome extends Component {
+class Banner extends Component {
   render() {
     return (
-      <section id="welcome">
+      <section id="banner">
         <div className="content flexbox-item fill-area flex-column">
           <Introduction />
           <Social />
@@ -20,4 +20,4 @@ class Welcome extends Component {
   }
 }
 
-export default Welcome;
+export default Banner;

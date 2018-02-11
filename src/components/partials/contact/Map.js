@@ -9,9 +9,14 @@ class Map extends Component {
       <GoogleMap
         defaultZoom={8}
         defaultCenter={{ lat: 38.624716, lng: -90.184793 }}
-        defaultOptions={{ styles: mapStyle }}
+        defaultOptions={
+          {
+            styles: mapStyle,
+            gestureHandling: 'cooperative',
+          }
+        }
       >
-        {this.props.isMarkerShown && <Marker position={{ lat: 38.624716, lng: -90.184793 }} />}
+        {this.props.isMarkerShown && <Marker title='Saint Louis' position={{ lat: 38.624716, lng: -90.184793 }} />}
       </GoogleMap>
     );
   }

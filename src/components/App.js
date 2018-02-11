@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import Header from './partials/header/Header';
 import StickyHeader from './partials/header/StickyHeader';
+import Banner from './partials/banner/Banner';
+import Navigation from './partials/navigation/Navigation';
 import Footer from './partials/footer/Footer';
 import Skills from './partials/skills/Skills';
 import Experience from './partials/experience/Experience';
@@ -37,6 +39,8 @@ class App extends Component {
           <div id="background-img"></div>
           <main className="flexbox">
             <Header />
+            <Banner />
+            <Navigation />
             <Skills />
             <Experience />
             <Education />
