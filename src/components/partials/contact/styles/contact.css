@@ -147,6 +147,10 @@
   color: rgb(104, 104, 104);
 }
 
+#contact ul {
+  padding-right: 40px;
+  list-style-type: none;
+}
 #contact .social-links button {
   width: 100%;
   margin-bottom: 20px;
