@@ -20,14 +20,14 @@ class App extends Component {
     this.handleScroll = this.handleScroll.bind(this);
 
     this.state = {
-      hide: true
+      isBannerVisible: true
     };
   }
 
   handleScroll(e) {
     const y = e.target.scrollTop;
     this.setState((prevState, props) => {
-      return {hide: (y < 820)};
+      return {isBannerVisible: (y < 820)};
     });
   }
 
@@ -36,7 +36,10 @@ class App extends Component {
       <div id="app-container" className="flexbox">
         <StickyHeader />
         <div id="app" className="flexbox" onScroll={this.handleScroll}>
-          <div id="background-img"></div>
+
+          {/* NOTE: hide if banner is not visible; this fixes flickering on fast scrolling. */}
+          <div id="background-img" className={this.state.isBannerVisible ? '' : 'hidden'}></div>
+
           <main className="flexbox">
             <Header />
             <Banner />
@@ -50,7 +53,7 @@ class App extends Component {
             <Footer />
           </main>
         </div>
-        <UpArrow hide={this.state.hide} />
+        <UpArrow hide={this.state.isBannerVisible} />
       </div>
     );
   }

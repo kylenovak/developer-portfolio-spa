@@ -16,9 +16,9 @@ class Footer extends Component {
               <h4>Site Info</h4>
               <p>
                 <NavLink exact to="/">
-                  <img onClick={() => scrollToHash('#header')} src={require('../../../images/favicon.png')} title="Home" width="64" height="64" />
+                  <img onClick={() => scrollToHash('#header')} src={require('../../../images/favicon.png')} title="Home" alt="Home" width="64" height="64" />
                 </NavLink>
-                This site was coded and styled by hand with HTML, CSS, JavaScript, and <Link href="https://reactjs.org/" title="ReactJS">ReactJS</Link>
+                This site was built by hand with HTML, CSS, JavaScript, and <Link href="https://reactjs.org/" title="ReactJS">ReactJS</Link> - Kyle Novak
               </p>
             </SectionColumn>
             <SectionColumn>
