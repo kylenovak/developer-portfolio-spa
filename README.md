@@ -13,6 +13,7 @@ What I achieved from this project was that I got to learn a lot of tools that I 
 ## Features
 Project features include:
 - Parallax scrolling
+- Responsive web design
 - CSS Transitions and Animations
 - Google Maps API to display my location
 - Gmail API to send email via a contact form
