@@ -1,7 +1,7 @@
 const express = require('express');
 const path = require('path');
-const errorHandler = require('./services/errorHandler');
-const apiRouter = require('./routes/api.router');
+const errorHandler = require('./server/services/errorHandler');
+const apiRouter = require('./server/routes/api.router');
 
 const app = express();
 
