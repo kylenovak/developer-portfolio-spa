@@ -1,6 +1,6 @@
 #up-arrow {
   position: absolute;
-  right: 25px;
+  right: 20px;
   border-radius: 5px;
   color: #fff;
   font-size: 2em;
@@ -21,6 +21,6 @@
 }
 
 #up-arrow.show {
-  bottom: 15px;
+  bottom: 10px;
   opacity: 1;
 }
