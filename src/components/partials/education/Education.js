@@ -8,7 +8,7 @@ class Education extends Component {
   render() {
     return (
       <section id="education">
-        <SectionHeader sectionTitle="Education" />
+        <SectionHeader title="Education" />
         <SectionRow>
           <div className="education-wrapper">
             <div className="col">

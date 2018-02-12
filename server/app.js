@@ -1,14 +1,9 @@
 const express = require('express');
-const bodyParser = require('body-parser');
 const path = require('path');
-
 const errorHandler = require('./services/errorHandler');
 const apiRouter = require('./routes/api.router');
 
 const app = express();
-
-app.use(bodyParser.urlencoded({extended:false}));
-app.use(bodyParser.json());
 
 app.use(express.static(path.join(__dirname, 'build')));
 

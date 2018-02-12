@@ -7,6 +7,8 @@ function internalErrorHandler(err, req, res, next) {
   const subject = "Error Status 500";
   const text = JSON.stringify(err, Object.getOwnPropertyNames(err));
 
+  console.error(err);
+
   if (config.IS_PRODUCTION) {
     // Send an email about the error
     mail.sendMail(email, name, subject, text)

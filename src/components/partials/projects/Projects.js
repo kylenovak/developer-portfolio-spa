@@ -11,7 +11,7 @@ class Projects extends Component {
   render() {
     return (
       <section id="projects">
-        <SectionHeader sectionTitle="Independent Projects" />
+        <SectionHeader title="Independent Projects" />
         <SectionRow>
           <SliderCard title="R&#233;sum&#233; SPA" subTitle="kylejnovak.com">
             <p>I rebuilt my portfolio site into a SPA (Single Page Application) by using a modern JavaScript tech stack.</p>

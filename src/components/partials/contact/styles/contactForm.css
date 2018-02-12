@@ -1,0 +1,157 @@
+#contact .input-wrapper {
+  overflow: auto;
+}
+
+#contact form input,
+#contact form textarea,
+#contact form button.submit {
+  color: #fff;
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: 2px solid rgb(44, 44, 44);
+  background-color: rgb(44, 44, 44);
+  font-size: 20px;
+}
+
+#contact form textarea {
+  resize: vertical;
+  min-height: 100px;
+  max-height: 400px;
+}
+
+#contact form input:focus,
+#contact form textarea:focus {
+  border: 2px solid #0077b5;
+}
+
+#contact form button.submit {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  text-transform: uppercase;
+  padding: 20px 10px;
+  margin-top: 10px;
+  text-shadow: 1px 1px 1px #005E9C;
+  background-color: #0077b5;
+  border: 1px solid #005E9C;
+  border-bottom: 5px solid #005E9C;
+  color: #fff;
+  transition: background-color 0.5s;
+}
+
+#contact form button.submit i {
+  font-size: 1.25em;
+  vertical-align: middle;
+  margin-right: 5px;
+}
+
+#contact form button.submit:active {
+  margin-top: 14px;
+  background-color: #005E9C;
+  border-bottom: 1px solid #005E9C;
+  box-shadow: 0 0 5px rgba(34, 34, 34, 0.5) inset;
+}
+
+#contact form button.submit:hover,
+#contact form button.submit:focus {
+  background-color: #0077b5;
+}
+
+#contact form.messages .form-alert {
+  position: relative;
+  margin-bottom: 10px !important;
+}
+
+#contact form.messages .form-alert .close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 1.25em;
+  cursor: pointer;
+}
+
+#contact form.messages div.success-message,
+#contact form.messages div.error-message {
+  margin-bottom: 10px;
+}
+
+#contact form.messages div.error-message,
+#contact form.messages div.error div.error-message {
+  margin-bottom: 0;
+  margin-top: 10px;
+}
+
+#contact form.messages div.success-message::first-letter,
+#contact form.messages div.error-message::first-letter,
+#contact form.messages div.error div.error-message::first-letter {
+  text-transform: capitalize;
+}
+
+#contact form.messages div.success-message,
+#contact form.messages div.error-message,
+#contact form.messages div.error div.error-message {
+  display: block;
+  padding: 10px;
+  color: #fff;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+#contact form.messages div.success-message {
+  background-color: #1B5E20;
+}
+
+#contact form.messages div.error-message,
+#contact form.messages div.error div.error-message {
+  background-color: #B71C1C;
+}
+
+#contact form div.valid div.error-message,
+#contact form.messages div.valid div.error-message {
+  display: none;
+}
+
+#contact form.messages div.error input,
+#contact form.messages div.error textarea {
+  border: 2px solid #B71C1C;
+}
+
+#contact form ::-webkit-input-placeholder  {
+  color: rgb(104, 104, 104);
+}
+
+#contact form ::-moz-placeholder {
+  color: rgb(104, 104, 104);
+}
+
+#contact form :-ms-input-placeholder {
+  color: rgb(104, 104, 104);
+}
+
+#contact form :-moz-placeholder {
+  color: rgb(104, 104, 104);
+}
+
+#contact .spin {
+  -webkit-transform: translateZ(0);
+  -moz-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  -o-transform: translateZ(0);
+  transform: translateZ(0);
+
+  animation: spin;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

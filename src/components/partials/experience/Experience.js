@@ -12,7 +12,7 @@ class Experience extends Component {
   render() {
     return (
       <section id="experience">
-        <SectionHeader sectionTitle="Professional Experience" />
+        <SectionHeader title="Professional Experience" />
         <SectionRow>
           <SliderCard title="Software Engineer" subTitle="The Boeing Company">
             <SliderCardImage href="https://www.boeing.com" src="boeing.png" subTitle="The Boeing Company" />

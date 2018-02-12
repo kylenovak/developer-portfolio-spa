@@ -9,7 +9,7 @@ class About extends Component {
   render() {
     return (
       <section id="about">
-        <SectionHeader sectionTitle="About Me" />
+        <SectionHeader title="About Me" />
         <SectionRow>
           <SectionColumn>
             <p>

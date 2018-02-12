@@ -16,7 +16,7 @@ class Map extends Component {
           }
         }
       >
-        {this.props.isMarkerShown && <Marker title='Saint Louis' position={{ lat: 38.624716, lng: -90.184793 }} />}
+        {this.props.isMarkerShown && <Marker title='St. Louis, MO' position={{ lat: 38.624716, lng: -90.184793 }} />}
       </GoogleMap>
     );
   }

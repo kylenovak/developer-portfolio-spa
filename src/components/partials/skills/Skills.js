@@ -10,7 +10,7 @@ class Skills extends Component {
   render() {
     return (
       <section id="skills">
-        <SectionHeader sectionTitle="Technical Skills" />
+        <SectionHeader title="Technical Skills" />
 
         <SectionRow>
           <SkillCard skillName="Web Applications" icon="laptop">
