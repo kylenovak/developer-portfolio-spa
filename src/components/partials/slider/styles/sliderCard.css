@@ -1,6 +1,6 @@
 .slider-card-wrapper {
   position: relative;
-  width: 33%;
+  width: 100%;
   text-align: center;
   margin: 0 10px;
   border: 2px solid rgba(34, 34, 34, 0.75);
@@ -35,7 +35,7 @@
 .slider-card-wrapper h3 {
   margin: 0;
   background-color: rgba(34, 34, 34, 0.75);
-  padding: 20px;
+  padding: 10px;
   color: #fff;
   transition: background-color 0.5s;
 }
@@ -62,7 +62,7 @@
 .slider-card-label {
   width: 100%;
   position: absolute;
-  bottom: -16px;
+  bottom: -12px;
   left: 50%;
   display: block;
   text-align: center;
@@ -72,8 +72,9 @@
   position: relative;
   display: inline-block;
   left: -50%;
-  padding: 5px 10px;
-  border-radius: 5px;
+  padding: 2px 4px;
+  font-size: 0.85em;
+  border-radius: 2px;
   background-color: rgba(74, 74, 74);
   color: #fff;
   transition: background-color 0.5s;
@@ -86,4 +87,40 @@
 .slider-card-wrapper img {
   margin: 20px 0;
   margin-bottom: 0;
+}
+
+.slider-card-wrapper:last-child {
+  margin-bottom: 0;
+}
+
+@media (max-width: 599px) {
+  .slider-card-wrapper {
+    margin-bottom: 30px;
+  }
+}
+
+@media (min-width: 600px) {
+  .slider-card-wrapper {
+    margin-bottom: 40px;
+  }
+
+  .slider-card-wrapper h3 {
+    padding: 20px;
+  }
+
+  .slider-card-label {
+    bottom: -16px;
+  }
+
+  .slider-card-label span {
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 1em;
+  }
+}
+
+@media (min-width: 900px) {
+  .slider-card-wrapper {
+    margin-bottom: 0;
+  }
 }

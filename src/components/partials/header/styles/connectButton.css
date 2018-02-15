@@ -1,33 +1,90 @@
 #connect-button {
   position: absolute;
-  top: 25px;
-  right: 20px;
+  top: 9px;
+  right: 10px;
+  padding: 2px 4px;
+  font-size: 0.75em;
+
   font-family: 'Open Sans', sans-serif;
   outline: none;
   cursor: pointer;
-  padding: 10px;
-  font-size: 1em;
   color: #fff;
   text-decoration: none;
   display: inline-block;
-  font-weight: normal;
-  font-size: 16px;
   text-shadow: 1px 1px 1px #005E9C;
   background-color: #0077b5;
+
   border: 1px solid #005E9C;
-  border-bottom: 5px solid #005E9C;
-  border-radius: 5px;
+  border-radius: 2px;
 }
 
 #connect-button:active {
-  margin-top: 4px;
   background-color: #005E9C;
   border-bottom: 1px solid #005E9C;
   box-shadow: 0 0 5px rgba(34, 34, 34, 0.5) inset;
 }
 
 #connect-button i {
-  font-size: 1.25em;
+  font-size: 1em;
+  margin-right: 2px;
   vertical-align: middle;
-  margin-right: 5px;
+}
+
+@media (max-width: 399px) {
+  #connect-button {
+    display: none;
+  }
+}
+
+/* tablets portrait */
+@media (min-width: 600px) {
+  #connect-button {
+    top: 10px;
+    right: 10px;
+    font-size: 0.75em;
+    padding: 5px;
+    border-bottom: 2px solid #005E9C;
+    border-radius: 3px;
+  }
+
+  #connect-button:active {
+    margin-top: 2px;
+  }
+}
+
+/* tablets landscape */
+@media (min-width: 900px) {
+  #connect-button {
+    top: 15px;
+    right: 15px;
+    font-size: 0.85em;
+    padding: 8px;
+    border-bottom: 3px solid #005E9C;
+    border-radius: 4px;
+  }
+
+  #connect-button:active {
+    margin-top: 3px;
+  }
+}
+
+/* desktops */
+@media (min-width: 1200px) {
+  #connect-button {
+    top: 25px;
+    right: 20px;
+    font-size: 1em;
+    padding: 10px;
+    border-bottom: 5px solid #005E9C;
+    border-radius: 5px;
+  }
+
+  #connect-button:active {
+    margin-top: 4px;
+  }
+
+  #connect-button i {
+    font-size: 1.25em;
+    margin-right: 5px;
+  }
 }

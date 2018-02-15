@@ -10,7 +10,7 @@ class About extends Component {
     return (
       <section id="about">
         <SectionHeader title="About Me" />
-        <SectionRow>
+        <SectionRow classes="about-columns">
           <SectionColumn>
             <p>
               Hello, my name is Kyle Novak. I am a software engineer and a full-stack web developer.

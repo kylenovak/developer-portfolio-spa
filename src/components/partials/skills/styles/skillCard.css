@@ -1,11 +1,16 @@
+.skill-cards {
+  flex-direction: column !important;
+  padding-right: 20px;
+}
+
 .card {
-  width: 33%;
-  padding: 20px;
-  margin: 0 10px;
+  width: 100%;
+  padding: 0 10px;
+  margin: 0 10px 10px 10px;
+  border-radius: 5px;
   overflow: auto;
   background-color: rgb(235, 235, 235);
   text-align: center;
-  border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.5s;
   border: 2px solid rgb(245, 245, 245);
@@ -27,10 +32,10 @@
 
 .card i {
   color: #0077b5;
-  padding: 40px;
-  margin: 20px 0;
+  padding: 20px;
+  margin: 10px 0;
+  font-size: 1.5em;
   border-radius: 50%;
-  font-size: 2em;
   border: 2px solid rgb(245, 245, 245);
   background-color: #fff;
   transition: color 0.5s, background-color 0.5s;
@@ -43,4 +48,42 @@
 
 .card p {
   transition: color 0.5s;
+}
+
+/* tablets portrait */
+@media (min-width: 600px) {
+  .skill-cards {
+    flex-direction: row !important;
+    padding-right: 0;
+    padding: 0 5px;
+  }
+
+  .card {
+    padding: 0 10px;
+    margin: 0 5px;
+  }
+
+  .card i {
+    padding: 30px;
+    margin: 15px 0;
+    font-size: 1.75em;
+  }
+}
+
+/* tablets landscape */
+@media (min-width: 900px) {
+  .skill-cards {
+    padding: 0;
+  }
+
+  .card {
+    padding: 20px;
+    margin: 0 10px;
+  }
+
+  .card i {
+    padding: 40px;
+    margin: 20px 0;
+    font-size: 2em;
+  }
 }

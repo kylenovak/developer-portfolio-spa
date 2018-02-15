@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import Introduction from './Introduction';
 import Social from './Social';
 import PhotoAttribution from './attribution/PhotoAttribution';
-import StartArrow from '../arrows/StartArrow';
+import StartArrow from './StartArrow';
 import './styles/banner.css';
 
 class Banner extends Component {

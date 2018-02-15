@@ -19,9 +19,10 @@
 
 #navigation ul li a {
   display: block;
-  padding: 20px;
+  padding: 10px;
+  font-size: 1em;
+  font-weight: normal;
   color: #fff;
-  font-weight: bold;
   text-decoration: none;
   text-transform: uppercase;
   transition: color 0.5s, background-color 0.5s;
@@ -35,4 +36,33 @@
 #navigation ul li:hover a {
   color: #222222;
   background-color: rgba(255, 255, 255, 0.75);
+}
+
+@media (max-width: 774px) {
+  #navigation {
+    display: none;
+  }
+}
+
+/* tablets portrait */
+@media (min-width: 775px) {
+  #navigation ul li a {
+    padding: 10px;
+  }
+}
+
+/* tablets landscape */
+@media (min-width: 900px) {
+  #navigation ul li a {
+    padding: 15px;
+    font-size: 1em;
+    font-weight: bold;
+  }
+}
+
+/* desktops */
+@media (min-width: 1200px) {
+  #navigation ul li a {
+    padding: 20px;
+  }
 }

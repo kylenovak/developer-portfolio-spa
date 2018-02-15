@@ -1,3 +1,7 @@
+.contact-columns {
+  flex-direction: column !important;
+}
+
 #contact {
   background-color: #222;
 }
@@ -42,6 +46,10 @@
   padding-bottom: 20px;
 }
 
+#contact section:last-child {
+  padding-bottom: 0;
+}
+
 #contact .section-column {
   margin: 0 10px;
 }
@@ -66,4 +74,14 @@
   color: #fff;
   font-size: 1.25em;
   font-weight: bold;
+}
+
+@media (min-width: 600px) {
+  .contact-columns {
+    flex-direction: row !important;
+  }
+
+  #contact section:last-child {
+    padding-bottom: 20px;
+  }
 }

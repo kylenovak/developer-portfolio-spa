@@ -12,10 +12,10 @@
   border: none;
   outline: none;
   cursor: pointer;
-  margin: 0 10px;
-  padding: 20px;
-  border-radius: 3px;
-  font-weight: bold;
+  margin: 0 5px;
+  padding: 5px;
+  border-radius: 2px;
+  font-weight: normal;
   transition: color 0.5s, background-color 0.5s;
   color: #fff;
   background-color: rgba(34, 34, 34, 0.75);
@@ -29,7 +29,51 @@
 
 #social button i {
   color: #0077b5;
-  font-size: 2em;
+  font-size: 1em;
   vertical-align: middle;
-  margin-right: 10px;
+  margin-right: 2px;
+}
+
+/* tablets portrait */
+@media (min-width: 600px) {
+  #social button {
+    margin: 0 5px;
+    padding: 10px;
+    border-radius: 3px;
+    font-weight: normal;
+  }
+
+  #social button i {
+    font-size: 1.5em;
+    margin-right: 5px;
+  }
+}
+
+/* tablets landscape */
+@media (min-width: 900px) {
+  #social button {
+    margin: 0 10px;
+    padding: 15px;
+    border-radius: 3px;
+    font-weight: bold;
+  }
+
+  #social button i {
+    font-size: 1.75em;
+    margin-right: 10px;
+  }
+}
+
+/* desktops */
+@media (min-width: 1200px) {
+  #social button {
+    margin: 0 10px;
+    padding: 20px;
+    border-radius: 3px;
+  }
+
+  #social button i {
+    font-size: 2em;
+    margin-right: 10px;
+  }
 }

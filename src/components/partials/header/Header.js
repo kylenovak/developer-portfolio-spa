@@ -1,11 +1,14 @@
 import React, { Component } from 'react';
 import Logo from './Logo';
+import MenuToggle from './MenuToggle';
 import ConnectButton from './ConnectButton';
+import './styles/header.css';
 
 class Header extends Component {
   render() {
     return (
-      <header id="header" className="header">
+      <header id="header">
+        <MenuToggle />
         <Logo />
         <ConnectButton />
       </header>

@@ -1,6 +1,11 @@
+.about-columns {
+  flex-direction: column !important;
+  padding: 0;
+}
+
 #about {
   background-color: #0077b5;
-  border-bottom: 5px dashed #222;
+  border-bottom: 2px dashed #222;
 }
 
 #about header h2 {
@@ -38,6 +43,10 @@
   padding-bottom: 20px;
 }
 
+#about section:last-child {
+  padding-bottom: 10px;
+}
+
 #about .section-column {
   margin: 0 10px;
 }
@@ -58,13 +67,15 @@
   margin-top: 0;
   color: #fff;
   margin: 0 30px;
+  text-align: center;
 }
 
 #about .section-column p {
   margin-top: 0;
   color: #fff;
-  font-size: 1.25em;
+  font-size: 1em;
   font-weight: bold;
+  padding: 0 10%;
 }
 
 #about .section-column:first-child p:first-child:first-letter {
@@ -78,4 +89,40 @@
 #about .section-column ul {
   color: #fff;
   list-style-type: circle;
+  text-align: center;
+  padding-left: 0;
+}
+
+@media (max-width: 399px) {
+  #about .section-column p {
+    padding: 0;
+  }
+}
+
+@media (min-width: 900px) {
+  .about-columns {
+    flex-direction: row !important;
+  }
+
+  #about {
+    border-bottom: 5px dashed #222;
+  }
+  
+  #about .section-column p {
+    font-size: 1.25em;
+    padding: 0;
+  }
+
+  #about .section-column h3  {
+    text-align: left;
+  }
+
+  #about .section-column ul {
+    text-align: left;
+    padding-left: 40px;
+  }
+
+  #about section:last-child {
+    padding-bottom: 20px;
+  }
 }

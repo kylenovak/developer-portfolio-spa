@@ -1,6 +1,11 @@
+.skill-panels {
+  flex-direction: column !important;
+  padding-right: 20px;
+}
+
 .panel {
-  width: 50%;
-  padding: 40px 20px;
+  width: 100%;
+  padding: 20px 10px;
   margin: 0 10px;
   overflow: auto;
   background-color: rgb(235, 235, 235);
@@ -12,6 +17,10 @@
 
 .panel:hover {
   background-color: rgba(34, 34, 34, 0.75);
+}
+
+.panel:first-child {
+  margin-bottom: 10px;
 }
 
 .panel ul {
@@ -46,4 +55,33 @@
 
 .panel li:last-child {
   padding-bottom: 0;
+}
+
+/* tablets portrait */
+@media (min-width: 600px) {
+  .skill-panels {
+    flex-direction: row !important;
+    padding: 0 5px;
+  }
+
+  .panel {
+    padding: 20px 10px;
+    margin: 0 5px;
+  }
+
+  .panel:first-child {
+    margin-bottom: 0;
+  }
+}
+
+/* tablets landscape */
+@media (min-width: 900px) {
+  .skill-panels {
+    padding: 0;
+  }
+
+  .panel {
+    padding: 40px 20px;
+    margin: 0 10px;
+  }
 }

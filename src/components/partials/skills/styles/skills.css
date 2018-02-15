@@ -1,13 +1,33 @@
 #skills {
   background-color: #fff;
-  padding-bottom: 60px;
+  padding-bottom: 20px;
   border-bottom: 2px solid rgb(245, 245, 245);
 }
 
 #skills section {
-  padding-bottom: 20px;
+  padding-bottom: 0;
 }
 
 #skills section:last-child {
   padding-bottom: 0;
+}
+
+@media (min-width: 600px) {
+  #skills {
+    padding-bottom: 40px;
+  }
+
+  #skills section {
+    padding-bottom: 10px;
+  }
+}
+
+@media (min-width: 900px) {
+  #skills {
+    padding-bottom: 60px;
+  }
+
+  #skills section {
+    padding-bottom: 20px;
+  }
 }

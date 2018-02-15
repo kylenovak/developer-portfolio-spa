@@ -1,16 +1,17 @@
 #photo-attribution {
   color: #fff;
+  font-size: 0.75em;
   position: absolute;
-  right: 15px;
-  bottom: 15px;
+  right: 10px;
+  bottom: 5px;
   text-shadow: 1px 1px 1px rgba(34, 34, 34, 0.75);
 }
 
 #photo-attribution a {
   color: #fff;
   text-decoration: none;
-  border-bottom: 2px dotted #0077b5;
-  padding: 0 2px;
+  border-bottom: 1px dotted #0077b5;
+  padding: 0;
   transition: background-color 0.5s;
 }
 
@@ -21,4 +22,34 @@
 #photo-attribution i {
   color: #0077b5;
   cursor: pointer;
+}
+
+/* tablets portrait */
+@media (min-width: 600px) {
+  #photo-attribution {
+    right: 10px;
+    bottom: 10px;
+    font-size: 1em;
+  }
+
+  #photo-attribution a {
+    border-bottom: 2px dotted #0077b5;
+    padding: 0 2px;
+  }
+}
+
+/* tablets landscape */
+@media (min-width: 900px) {
+  #photo-attribution {
+    right: 10px;
+    bottom: 10px;
+  }
+}
+
+/* desktops */
+@media (min-width: 1200px) {
+  #photo-attribution {
+    right: 15px;
+    bottom: 15px;
+  }
 }

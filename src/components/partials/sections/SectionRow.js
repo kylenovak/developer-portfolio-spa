@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 class SectionRow extends Component {
   render() {
     return (
-      <section className="section-row flexbox-item fill-area flex-row container">
+      <section className={`section-row flexbox-item fill-area flex-row container ${this.props.classes}`}>
         {this.props.children}
       </section>
     );

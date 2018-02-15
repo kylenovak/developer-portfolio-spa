@@ -3,9 +3,36 @@
 }
 
 #banner div.content {
+  padding: 60px 0;
   color: #fff;
   text-align: center;
-  padding: 240px 0;
   background-color: rgba(34, 34, 34, 0.5);
   box-shadow: 0 0 2px rgba(34, 34, 34, 0.5) inset;
+}
+
+@media (min-width: 600px) {
+  #banner div.content {
+    padding: 90px 0;
+  }
+}
+
+/* tablets portrait */
+@media (min-width: 775px) {
+  #banner div.content {
+    padding: 120px 0;
+  }
+}
+
+/* tablets landscape */
+@media (min-width: 900px) {
+  #banner div.content {
+    padding: 180px 0;
+  }
+}
+
+/* desktops */
+@media (min-width: 1200px) {
+  #banner div.content {
+    padding: 240px 0;
+  }
 }

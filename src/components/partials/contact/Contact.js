@@ -13,7 +13,7 @@ class Contact extends Component {
       <section id="contact">
         <SectionHeader title="Contact Me" />
 
-        <SectionRow>
+        <SectionRow classes="contact-columns">
           <SectionColumn>
             <ContactForm />
           </SectionColumn>

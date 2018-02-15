@@ -12,7 +12,7 @@ class Skills extends Component {
       <section id="skills">
         <SectionHeader title="Technical Skills" />
 
-        <SectionRow>
+        <SectionRow classes="skill-cards">
           <SkillCard skillName="Web Applications" icon="laptop">
             I develop apps by using web technologies; such as, JavaScript, ReactJS, NodeJS, HTML, and CSS.
           </SkillCard>
@@ -26,7 +26,7 @@ class Skills extends Component {
           </SkillCard>
         </SectionRow>
 
-        <SectionRow>
+        <SectionRow classes="skill-panels">
           <SkillPanel panelName="Programming Languages">
             <Skill name="JavaScript" level="95" />
             <Skill name="Python" level="90" />

@@ -13,9 +13,9 @@ class Experience extends Component {
     return (
       <section id="experience">
         <SectionHeader title="Professional Experience" />
-        <SectionRow>
+        <SectionRow classes="experience-cards">
           <SliderCard title="Software Engineer" subTitle="The Boeing Company">
-            <SliderCardImage href="https://www.boeing.com" src="boeing.png" subTitle="The Boeing Company" />
+            <SliderCardImage href="http://www.boeing.com" src="boeing.png" subTitle="The Boeing Company" />
             <SliderCardList title="Tools & Technologies">
               <li>C++</li>
               <li>Python</li>

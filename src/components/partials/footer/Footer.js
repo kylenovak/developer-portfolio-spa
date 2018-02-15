@@ -11,7 +11,7 @@ class Footer extends Component {
     return (
       <footer id="footer">
         <div className="footer-wrapper">
-          <SectionRow>
+          <SectionRow classes="footer-columns">
             <SectionColumn>
               <h4>Site Info</h4>
               <p>
@@ -60,7 +60,7 @@ class Footer extends Component {
         </div>
 
         <div className="footer-sub-wrapper">
-          <SectionRow>
+          <SectionRow classes="footer-sub-columns">
             <div id="copyright" className="footer-sub-col">
               <i className="far fa-copyright"></i> Copyright {(new Date()).getFullYear()} Kyle J. Novak
             </div>

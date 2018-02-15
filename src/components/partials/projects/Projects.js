@@ -12,7 +12,7 @@ class Projects extends Component {
     return (
       <section id="projects">
         <SectionHeader title="Independent Projects" />
-        <SectionRow>
+        <SectionRow classes="project-cards">
           <SliderCard title="R&#233;sum&#233; SPA" subTitle="kylejnovak.com">
             <p>I rebuilt my portfolio site into a SPA (Single Page Application) by using a modern JavaScript tech stack.</p>
             <SliderCardList title="Tools & Technologies">
