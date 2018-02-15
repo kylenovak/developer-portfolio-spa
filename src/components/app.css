@@ -2,12 +2,6 @@
   background-color: rgba(34, 34, 34, 0.5);
   overflow: hidden;
   overflow-y: auto;
-  -webkit-perspective: 1px;
-  -moz-perspective: 1px;
-  perspective: 1px;
-  -webkit-transform-style: preserve-3d;
-  -moz-transform-style: preserve-3d;
-  transform-style: preserve-3d;
 }
 
 #app #background-img {
@@ -20,17 +14,30 @@
 
  z-index: -999;
 
- background-image: url('../images/saint_louis_arch.jpg');
- background-repeat: no-repeat;
- background-size: cover;
- background-position: center;
-
- -webkit-transform: translateZ(-1px) scale(2);
- -moz-transform: translateZ(-1px) scale(2);
- -ms-transform: translateZ(-1px) scale(2);
- -o-transform: translateZ(-1px) scale(2);
- transform: translateZ(-1px) scale(2);
-
  -webkit-filter: grayscale(100%);
  filter: grayscale(100%);
+}
+
+@media (min-width: 775px) {
+  #app {
+    -webkit-perspective: 1px;
+    -moz-perspective: 1px;
+    perspective: 1px;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+  }
+
+  #app #background-img {
+    background-image: url('../images/saint_louis_arch.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    -webkit-transform: translateZ(-1px) scale(2);
+    -moz-transform: translateZ(-1px) scale(2);
+    -ms-transform: translateZ(-1px) scale(2);
+    -o-transform: translateZ(-1px) scale(2);
+    transform: translateZ(-1px) scale(2);
+  }
 }

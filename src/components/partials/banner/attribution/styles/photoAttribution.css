@@ -24,8 +24,13 @@
   cursor: pointer;
 }
 
-/* tablets portrait */
-@media (min-width: 600px) {
+@media (max-width: 774px) {
+  #photo-attribution {
+    display: none;
+  }
+}
+
+@media (min-width: 775px) {
   #photo-attribution {
     right: 10px;
     bottom: 10px;
