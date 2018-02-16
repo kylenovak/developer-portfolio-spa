@@ -1,10 +1,10 @@
-#navigation {
+.navigation {
   position: relative;
   background-color: rgba(0, 119, 181, 0.75);
   border-bottom: 2px solid rgba(34, 34, 34, 0.75);
 }
 
-#navigation ul {
+.navigation ul {
   list-style-type: none;
   padding: 0;
   max-width: 1000px;
@@ -12,12 +12,12 @@
   text-align: center;
 }
 
-#navigation ul li {
+.navigation ul li {
   display: inline-block;
   padding: 0;
 }
 
-#navigation ul li a {
+.navigation ul li a {
   display: block;
   padding: 10px;
   font-size: 1em;
@@ -28,32 +28,32 @@
   transition: color 0.5s, background-color 0.5s;
 }
 
-#navigation ul li.active a {
+.navigation ul li.active a {
   color: #222222;
   background-color: rgba(255, 255, 255, 0.75);
 }
 
-#navigation ul li:hover a {
+.navigation ul li:hover a {
   color: #222222;
   background-color: rgba(255, 255, 255, 0.75);
 }
 
 @media (max-width: 774px) {
-  #navigation {
+  .navigation {
     display: none;
   }
 }
 
 /* tablets portrait */
 @media (min-width: 775px) {
-  #navigation ul li a {
+  .navigation ul li a {
     padding: 10px;
   }
 }
 
 /* tablets landscape */
 @media (min-width: 900px) {
-  #navigation ul li a {
+  .navigation ul li a {
     padding: 15px;
     font-size: 1em;
     font-weight: bold;
@@ -62,7 +62,7 @@
 
 /* desktops */
 @media (min-width: 1200px) {
-  #navigation ul li a {
+  .navigation ul li a {
     padding: 20px;
   }
 }

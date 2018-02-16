@@ -1,5 +1,5 @@
 class Form {
-  constructor(fieldNames) {
+  constructor(formId, fieldNames) {
     let fields = {};
 
     for (let i = 0; i < fieldNames.length; i++) {
@@ -12,9 +12,17 @@ class Form {
     }
 
     this.form = {
+      formId: formId,
       error: false,
       fields: fields
     };
+  }
+
+  reset() {
+    let form = document.getElementById(this.form.formId);
+    if (form) {
+      form.reset();
+    }
   }
 
   getFormFields() {

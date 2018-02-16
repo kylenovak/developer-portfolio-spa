@@ -6,8 +6,8 @@ import './styles/navigation.css';
 const scrollToHash = require('../../../services/scrollToHash');
 
 class Navigation extends Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
 
     this.handleClick = this.handleClick.bind(this);
 
@@ -16,10 +16,10 @@ class Navigation extends Component {
     const hash = window.location.hash.split('#').slice(1).join('#');
     this.defaultNavId = null;
     if (hash) {
-      this.defaultNavId = `nav-${hash}`;
+      this.defaultNavId = `nav-${hash}-${this.props.uniqueNavIdSuffix}`;
     }
     else {
-      this.defaultNavId = 'nav-home';
+      this.defaultNavId = `nav-home-${this.props.uniqueNavIdSuffix}`;
     }
 
     this.state = {
@@ -54,9 +54,9 @@ class Navigation extends Component {
   }
 
   setActiveNavLink(id) {
-    let activeNavId = 'nav-home';
+    let activeNavId = `nav-home-${this.props.uniqueNavIdSuffix}`;
     if (id !== '') {
-      activeNavId = `nav-${id}`;
+      activeNavId = `nav-${id}-${this.props.uniqueNavIdSuffix}`;
     }
 
     this.setState((prevState, props) => {
@@ -78,27 +78,27 @@ class Navigation extends Component {
 
   render() {
     return (
-      <nav id="navigation">
+      <nav id={`navigation-${this.props.uniqueNavIdSuffix}`} className="navigation">
         <ul className="flexbox-item flex-row container" onClick={this.handleClick}>
-          <li id="nav-home" title="Home">
+          <li id={`nav-home-${this.props.uniqueNavIdSuffix}`} title="Home">
             <NavLink exact to="/"><i className="fas fa-home"></i> Home</NavLink>
           </li>
-          <li id="nav-skills" title="My Technical Skills">
+          <li id={`nav-skills-${this.props.uniqueNavIdSuffix}`} title="My Technical Skills">
             <NavLink to="#skills"><i className="fas fa-chart-bar"></i> Skills</NavLink>
           </li>
-          <li id="nav-experience" title="My Professional Experience">
+          <li id={`nav-experience-${this.props.uniqueNavIdSuffix}`} title="My Professional Experience">
             <NavLink to="#experience"><i className="fas fa-briefcase"></i> Experience</NavLink>
           </li>
-          <li id="nav-education" title="My Education">
+          <li id={`nav-education-${this.props.uniqueNavIdSuffix}`} title="My Education">
             <NavLink to="#education"><i className="fas fa-graduation-cap"></i> Education</NavLink>
           </li>
-          <li id="nav-projects" title="My Personal Projects">
+          <li id={`nav-projects-${this.props.uniqueNavIdSuffix}`} title="My Personal Projects">
             <NavLink to="#projects"><i className="fas fa-keyboard"></i> Projects</NavLink>
           </li>
-          <li id="nav-about" title="About Me">
+          <li id={`nav-about-${this.props.uniqueNavIdSuffix}`} title="About Me">
             <NavLink to="#about"><i className="far fa-question-circle"></i> About</NavLink>
           </li>
-          <li id="nav-contact" title="Contact Me">
+          <li id={`nav-contact-${this.props.uniqueNavIdSuffix}`} title="Contact Me">
             <NavLink to="#contact"><i className="far fa-envelope"></i> Contact</NavLink>
           </li>
         </ul>

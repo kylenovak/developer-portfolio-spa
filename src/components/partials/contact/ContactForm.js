@@ -6,7 +6,7 @@ class ContactForm extends Component {
   constructor(props) {
     super(props);
 
-    this.form = new formService.Form(['name', 'email', 'subject', 'message']);
+    this.form = new formService.Form('contact-form', ['name', 'email', 'subject', 'message']);
 
     this.state = {
       showMessages: false,
@@ -43,6 +43,10 @@ class ContactForm extends Component {
         .then(json => {
           let success = json.success;
           let message = json.message;
+
+          if (success) {
+            this.form.reset();
+          }
 
           this.setState({
             mailSent: success,
@@ -88,7 +92,7 @@ class ContactForm extends Component {
 
   render() {
     return (
-      <form onSubmit={this.handleSubmit} onChange={this.handleChange} className={this.state.showMessages ? 'messages' : ''}>
+      <form id="contact-form" onSubmit={this.handleSubmit} onChange={this.handleChange} className={this.state.showMessages ? 'messages' : ''}>
         <h3>Send me a Message</h3>
 
         <div className="input-wrapper">
@@ -126,10 +130,13 @@ class ContactForm extends Component {
             <div className="error-message">
               {this.state.fields.message.message}
             </div>
-            <textarea name="message" placeholder="Your messsage"></textarea>
+            <textarea name="message"
+              placeholder="Your messsage"
+              maxLength={this.props.maxLength}
+              onChange={this.handleTextAreaChange}></textarea>
           </div>
         </div>
-        
+
         <button type="submit" className="submit">
           <i className={`fas fa-sync-alt ${this.state.spinner ? 'spin' : 'hidden'}`}></i>
           <span className={this.state.spinner ? 'hidden' : ''}>

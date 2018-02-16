@@ -59,7 +59,7 @@ class Footer extends Component {
           </SectionRow>
         </div>
 
-        <div className="footer-sub-wrapper">
+        <div className="footer-sub-wrapper" id="foot">
           <SectionRow classes="footer-sub-columns">
             <div id="copyright" className="footer-sub-col">
               <i className="far fa-copyright"></i> Copyright {(new Date()).getFullYear()} Kyle J. Novak

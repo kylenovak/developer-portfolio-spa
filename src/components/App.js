@@ -18,23 +18,50 @@ class App extends Component {
     super(props);
 
     this.handleScroll = this.handleScroll.bind(this);
+    this.handleResize = this.handleResize.bind(this);
 
     this.state = {
-      isBannerVisible: true
+      isBannerVisible: true,
+      isScrollAtBottom: false,
+      isStickyNavHidden: true
     };
   }
 
-  handleScroll(e) {
-    const y = e.target.scrollTop;
-    this.setState((prevState, props) => {
-      return {isBannerVisible: (y < 820)};
+  setScrollState(el) {
+    this.setState({
+      isBannerVisible: el.scrollTop <= this.skills.offsetTop,
+      isScrollAtBottom: el.scrollTop >= (el.scrollHeight - el.offsetHeight),
+      isStickyNavHidden: el.scrollTop <= this.navigation.offsetTop
     });
+  }
+
+  handleScroll(e) {
+    this.setScrollState(e.target);
+  }
+
+  handleResize(e) {
+    this.setScrollState(this.app);
+  }
+
+  componentDidMount() {
+    // cache dom elements
+    this.app = document.getElementById('app');
+    this.skills = document.getElementById('skills');
+    this.navigation = document.getElementById('navigation-static');
+
+    window.addEventListener('resize', this.handleResize);
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener('resize', this.handleResize);
   }
 
   render() {
     return (
       <div id="app-container" className="flexbox">
-        <StickyHeader />
+        <StickyHeader hide={this.state.isStickyNavHidden}>
+          <Navigation uniqueNavIdSuffix="sticky" />
+        </StickyHeader>
         <div id="app" className="flexbox" onScroll={this.handleScroll}>
 
           {/* NOTE: hide if banner is not visible; this fixes flickering on fast scrolling. */}
@@ -43,7 +70,9 @@ class App extends Component {
           <main className="flexbox">
             <Header />
             <Banner />
-            <Navigation />
+            <div style={{opacity: this.state.isStickyNavHidden ? '1': '0'}}>
+              <Navigation uniqueNavIdSuffix="static" />
+            </div>
             <Skills />
             <Experience />
             <Education />
@@ -53,7 +82,7 @@ class App extends Component {
             <Footer />
           </main>
         </div>
-        <UpArrow hide={this.state.isBannerVisible} />
+        <UpArrow hide={this.state.isBannerVisible || this.state.isScrollAtBottom} />
       </div>
     );
   }

@@ -15,7 +15,7 @@ class Contact extends Component {
 
         <SectionRow classes="contact-columns">
           <SectionColumn>
-            <ContactForm />
+            <ContactForm maxLength="500" />
           </SectionColumn>
 
           <SectionColumn>

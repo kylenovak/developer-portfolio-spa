@@ -37,9 +37,9 @@ class MyMap extends Component {
       <MapWrapper
         isMarkerShown={true}
         googleMapURL={this.api_url}
-        loadingElement={<div style={{ height: `100%` }} />}
-        containerElement={<div style={{ height: `400px` }} />}
-        mapElement={<div style={{ height: `100%` }} />}
+        loadingElement={<div style={{ minHeight: `400px` }} />}
+        containerElement={<div style={{ minHeight: `400px` }} />}
+        mapElement={<div style={{ minHeight: `400px` }} />}
       />
     );
   }
