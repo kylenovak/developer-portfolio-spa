@@ -1,7 +1,27 @@
-#header {
+#header-static,
+#header-sticky {
+  display: none;
   position: relative;
   width: 100%;
   background-color: #222;
   border-bottom: 2px solid rgba(54, 54, 54, 0.75);
   text-align: center;
+}
+
+#header-sticky  {
+  padding-right: 10px;
+  border: none;
+  box-shadow: 0 0 5px 0 rgba(34, 34, 34, 0.75);
+}
+
+@media (max-width: 774px) {
+  #header-sticky {
+    display: block;
+  }
+}
+
+@media (min-width: 775px) {
+  #header-static {
+    display: block;
+  }
 }

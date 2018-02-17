@@ -78,14 +78,6 @@
   padding: 0 10%;
 }
 
-#about .section-column:first-child p:first-child:first-letter {
-  float: left;
-  font-size: 60px;
-  padding-top: 4px;
-  padding-right: 8px;
-  padding-left: 3px;
-}
-
 #about .section-column ul {
   color: #fff;
   list-style-type: circle;
@@ -107,7 +99,7 @@
   #about {
     border-bottom: 5px dashed #222;
   }
-  
+
   #about .section-column p {
     font-size: 1.25em;
     padding: 0;
@@ -124,5 +116,13 @@
 
   #about section:last-child {
     padding-bottom: 20px;
+  }
+
+  #about .section-column:first-child p:first-child:first-letter {
+    float: left;
+    font-size: 60px;
+    padding-top: 4px;
+    padding-right: 8px;
+    padding-left: 3px;
   }
 }

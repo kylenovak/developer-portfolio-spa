@@ -7,7 +7,7 @@ import './styles/header.css';
 class Header extends Component {
   render() {
     return (
-      <header id="header">
+      <header id={`header-${this.props.uniqueHeaderIdSuffix}`}>
         <MenuToggle />
         <Logo />
         <ConnectButton />

@@ -4,11 +4,17 @@
   width: 100%;
   right: 0;
   z-index: 999;
-
 }
 
 #sticky-header nav {
   border-bottom: 0;
   box-shadow: 0 0 5px 0 rgba(34, 34, 34, 0.75);
   padding-right: 10px;
+  background-color: rgb(0, 118, 191);
+}
+
+@media (max-width: 774px) {
+  #sticky-header.hidden {
+    display: block !important;
+  }
 }

@@ -5,7 +5,10 @@ const scrollToHash = require('../../../services/scrollToHash');
 class ConnectButton extends Component {
   render() {
     return (
-      <button id="connect-button" onClick={() => scrollToHash('#contact')} title="Connect with Kyle">
+      <button className="connect-button"
+        title="Connect with Kyle"
+        onClick={() => scrollToHash('#contact')}
+      >
         <i className="far fa-comments"></i> Connect
       </button>
     );

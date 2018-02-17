@@ -21,22 +21,21 @@ class App extends Component {
     this.handleResize = this.handleResize.bind(this);
 
     this.state = {
-      isBannerVisible: true,
       isScrollAtBottom: false,
       isStickyNavHidden: true
     };
   }
 
   setScrollState(el) {
+    const y = el.scrollTop;
     this.setState({
-      isBannerVisible: el.scrollTop <= this.skills.offsetTop,
-      isScrollAtBottom: el.scrollTop >= (el.scrollHeight - el.offsetHeight),
-      isStickyNavHidden: el.scrollTop <= this.navigation.offsetTop
+      isScrollAtBottom: y >= (el.scrollHeight - el.offsetHeight),
+      isStickyNavHidden: y <= this.navigation.offsetTop
     });
   }
 
   handleScroll(e) {
-    this.setScrollState(e.target);
+    this.setScrollState(this.app);
   }
 
   handleResize(e) {
@@ -62,13 +61,16 @@ class App extends Component {
         <StickyHeader hide={this.state.isStickyNavHidden}>
           <Navigation uniqueNavIdSuffix="sticky" />
         </StickyHeader>
+
+        <Header uniqueHeaderIdSuffix="sticky" />
+
         <div id="app" className="flexbox" onScroll={this.handleScroll}>
 
           {/* NOTE: hide if banner is not visible; this fixes flickering on fast scrolling. */}
-          <div id="background-img" className={this.state.isBannerVisible ? '' : 'hidden'}></div>
+          <div id="background-img" className={this.state.isStickyNavHidden ? '' : 'hidden'}></div>
 
           <main className="flexbox">
-            <Header />
+            <Header uniqueHeaderIdSuffix="static" />
             <Banner />
             <div style={{opacity: this.state.isStickyNavHidden ? '1': '0'}}>
               <Navigation uniqueNavIdSuffix="static" />
@@ -82,7 +84,7 @@ class App extends Component {
             <Footer />
           </main>
         </div>
-        <UpArrow hide={this.state.isBannerVisible || this.state.isScrollAtBottom} />
+        <UpArrow hide={this.state.isStickyNavHidden || this.state.isScrollAtBottom} />
       </div>
     );
   }

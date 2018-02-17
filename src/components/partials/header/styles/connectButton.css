@@ -1,4 +1,4 @@
-#connect-button {
+.connect-button {
   position: absolute;
   top: 9px;
   right: 10px;
@@ -18,27 +18,27 @@
   border-radius: 2px;
 }
 
-#connect-button:active {
+.connect-button:active {
   background-color: #005E9C;
   border-bottom: 1px solid #005E9C;
   box-shadow: 0 0 5px rgba(34, 34, 34, 0.5) inset;
 }
 
-#connect-button i {
+.connect-button i {
   font-size: 1em;
   margin-right: 2px;
   vertical-align: middle;
 }
 
 @media (max-width: 399px) {
-  #connect-button {
+  .connect-button {
     display: none;
   }
 }
 
 /* tablets portrait */
 @media (min-width: 600px) {
-  #connect-button {
+  .connect-button {
     top: 10px;
     right: 10px;
     font-size: 0.75em;
@@ -47,14 +47,14 @@
     border-radius: 3px;
   }
 
-  #connect-button:active {
+  .connect-button:active {
     margin-top: 2px;
   }
 }
 
 /* tablets landscape */
 @media (min-width: 900px) {
-  #connect-button {
+  .connect-button {
     top: 15px;
     right: 15px;
     font-size: 0.85em;
@@ -63,14 +63,14 @@
     border-radius: 4px;
   }
 
-  #connect-button:active {
+  .connect-button:active {
     margin-top: 3px;
   }
 }
 
 /* desktops */
 @media (min-width: 1200px) {
-  #connect-button {
+  .connect-button {
     top: 25px;
     right: 20px;
     font-size: 1em;
@@ -79,11 +79,11 @@
     border-radius: 5px;
   }
 
-  #connect-button:active {
+  .connect-button:active {
     margin-top: 4px;
   }
 
-  #connect-button i {
+  .connect-button i {
     font-size: 1.25em;
     margin-right: 5px;
   }

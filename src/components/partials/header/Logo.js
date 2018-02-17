@@ -4,7 +4,7 @@ import './styles/logo.css';
 class Logo extends Component {
   render() {
     return (
-      <h1 id="logo" title="Kyle J. Novak">
+      <h1 className="header-logo" title="Kyle J. Novak">
         Kyle <span>Joseph</span> Novak
       </h1>
     );

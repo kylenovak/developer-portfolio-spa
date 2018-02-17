@@ -10,10 +10,31 @@ class MenuToggle extends Component {
     };
 
     this.handleClick = this.handleClick.bind(this);
+    this.handleStickyNavClick = this.handleStickyNavClick.bind(this);
+  }
+
+  handleStickyNavClick(e) {
+    this.setState({menuToggleOn: false});
+  }
+
+  componentDidMount() {
+    this.stickyNav = document.getElementById('navigation-sticky');
+    this.stickyNav.addEventListener('click', this.handleStickyNavClick);
+  }
+
+  componentWillUnmount() {
+    this.stickyNav.removeEventListener('click', this.handleStickyNavClick);
   }
 
   handleClick(e) {
     this.setState((prevState, props) => {
+      if (prevState.menuToggleOn) {
+        this.stickyNav.classList.remove('show');
+      }
+      else {
+        this.stickyNav.classList.add('show');
+      }
+
       return {
         menuToggleOn: !prevState.menuToggleOn
       };
@@ -22,10 +43,12 @@ class MenuToggle extends Component {
 
   render() {
     return (
-      <button id="menu-toggle" title="Menu" onClick={this.handleClick} className={this.state.menuToggleOn ? 'animate' : ''}>
-        <span id="menu-bar-top" className="menu-bar"></span>
-        <span id="menu-bar-middle" className="menu-bar"></span>
-        <span id="menu-bar-bottom" className="menu-bar"></span>
+      <button title="Menu"
+        onClick={this.handleClick}
+        className={`menu-toggle ${this.state.menuToggleOn ? 'animate' : ''}`}>
+        <span className="menu-bar top"></span>
+        <span className="menu-bar middle"></span>
+        <span className="menu-bar bottom"></span>
       </button>
     );
   }

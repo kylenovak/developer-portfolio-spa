@@ -1,4 +1,4 @@
-#logo {
+.header-logo {
   display: inline-block;
   font-size: 1em;
   padding: 10px;
@@ -7,20 +7,20 @@
   color: #fff;
 }
 
-#logo span {
+.header-logo span {
   color: #0077b5;
 }
 
 /* tablets portrait */
 @media (min-width: 600px) {
-  #logo {
+  .header-logo {
     font-size: 1.5em;
   }
 }
 
 /* tablets landscape */
 @media (min-width: 900px) {
-  #logo {
+  .header-logo {
     font-size: 2em;
     padding: 15px;
   }
@@ -28,7 +28,7 @@
 
 /* desktops */
 @media (min-width: 1200px) {
-  #logo {
+  .header-logo {
     font-size: 3em;
     padding: 20px;
   }

@@ -33,6 +33,7 @@ class Navigation extends Component {
   }
 
   componentDidMount() {
+    this.stickyNav = document.getElementById('navigation-sticky');
     document.getElementById(this.defaultNavId).classList.add('active');
   }
 
@@ -47,6 +48,8 @@ class Navigation extends Component {
       if (node.localName === 'i') {
         node = node.parentNode;
       }
+      
+      this.stickyNav.classList.remove('show');
 
       let id = scrollToHash(node.href);
       this.setActiveNavLink(id);

@@ -1,4 +1,4 @@
-#menu-toggle {
+.menu-toggle {
   position: absolute;
   top: 7px;
   left: 10px;
@@ -25,18 +25,18 @@
   transition: background-color 0.25s;
 }
 
-#menu-toggle.animate .menu-bar {
+.menu-toggle.animate .menu-bar {
   transition: all 0.25s;
 }
 
-#menu-toggle.animate #menu-bar-top {
+.menu-toggle.animate .menu-bar.top {
   top: 6px;
   transform: rotate(45deg);
 }
-#menu-toggle.animate #menu-bar-middle {
+.menu-toggle.animate .menu-bar.middle {
   opacity: 0;
 }
-#menu-toggle.animate #menu-bar-bottom {
+.menu-toggle.animate .menu-bar.bottom {
   bottom: 6px;
   transform: rotate(-45deg);
 }
@@ -45,12 +45,12 @@
   margin-top: 0;
 }
 
-#menu-toggle:hover .menu-bar {
+.menu-toggle:hover .menu-bar {
   background-color: #0077b5;
 }
 
 @media (min-width: 600px) {
-  #menu-toggle {
+  .menu-toggle {
     top: 10px;
     width: 35px;
     height: 30px;
@@ -63,21 +63,21 @@
     border-radius: 2px;
   }
 
-  #menu-toggle.animate #menu-bar-top {
+  .menu-toggle.animate .menu-bar.top {
     top: 8px;
     transform: rotate(45deg);
   }
-  #menu-toggle.animate #menu-bar-middle {
+  .menu-toggle.animate .menu-bar.middle {
     opacity: 0;
   }
-  #menu-toggle.animate #menu-bar-bottom {
+  .menu-toggle.animate .menu-bar.bottom {
     bottom: 8px;
     transform: rotate(-45deg);
   }
 }
 
 @media (min-width: 775px) {
-  #menu-toggle {
+  .menu-toggle {
     display: none;
   }
 }

@@ -49,6 +49,11 @@ h1, h2, h3 {
 	display: none;
 }
 
+.show {
+	display: block;
+	position: absolute;
+}
+
 .container {
 	max-width: 1000px;
 	margin: 0 auto;
