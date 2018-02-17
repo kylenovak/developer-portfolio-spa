@@ -46,6 +46,10 @@ class ContactForm extends Component {
 
           if (success) {
             this.form.reset();
+            document.getElementById('fname').value = '';
+            document.getElementById('femail').value = '';
+            document.getElementById('fsubject').value = '';
+            document.getElementById('fmessage').value = '';
           }
 
           this.setState({
@@ -92,7 +96,10 @@ class ContactForm extends Component {
 
   render() {
     return (
-      <form id="contact-form" onSubmit={this.handleSubmit} onChange={this.handleChange} className={this.state.showMessages ? 'messages' : ''}>
+      <form id="contact-form"
+        onSubmit={this.handleSubmit}
+        onChange={this.handleChange}
+        className={this.state.showMessages ? 'messages' : ''}>
         <h3>Send me a Message</h3>
 
         <div className="input-wrapper">
@@ -109,28 +116,28 @@ class ContactForm extends Component {
             <div className="error-message">
               {this.state.fields.name.message}
             </div>
-            <input type="text" name="name" placeholder="Your name" />
+            <input id="fname" type="text" name="name" placeholder="Your name" />
           </div>
 
           <div className={`${ this.state.fields.email.error ? 'error' : 'valid' }`}>
             <div className="error-message">
               {this.state.fields.email.message}
             </div>
-            <input type="text" name="email" placeholder="Your email" />
+            <input id="femail" type="text" name="email" placeholder="Your email" />
           </div>
 
           <div className={`${ this.state.fields.subject.error ? 'error' : 'valid' }`}>
             <div className="error-message">
               {this.state.fields.subject.message}
             </div>
-            <input type="text" name="subject" placeholder="Subject" />
+            <input id="fsubject" type="text" name="subject" placeholder="Subject" />
           </div>
 
           <div className={`${ this.state.fields.message.error ? 'error' : 'valid' }`}>
             <div className="error-message">
               {this.state.fields.message.message}
             </div>
-            <textarea name="message"
+            <textarea id="fmessage" name="message"
               placeholder="Your messsage"
               maxLength={this.props.maxLength}
               onChange={this.handleTextAreaChange}></textarea>

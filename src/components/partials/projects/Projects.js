@@ -23,6 +23,9 @@ class Projects extends Component {
               <li>HTML</li>
               <li>CSS</li>
             </SliderCardList>
+            <Link href="https://github.com/kylenovak/developer-portfolio-spa" title="Github source code">
+              <button><i className="fab fa-github-square"></i><span> View Source</span></button>
+            </Link>
           </SliderCard>
           <SliderCard title="Portfolio Web App" subTitle="kylejnovak.com">
             <p>This was my original portfolio site that I built with a Python stack.</p>
@@ -36,7 +39,7 @@ class Projects extends Component {
               <li>JavaScript</li>
               <li>jQuery</li>
             </SliderCardList>
-            <Link href="https://github.com/kylenovak/kylejnovak-personal-portfolio" title="Github source code">
+            <Link href="https://github.com/kylenovak/developer-portfolio-web-app" title="Github source code">
               <button><i className="fab fa-github-square"></i><span> View Source</span></button>
             </Link>
           </SliderCard>
@@ -49,7 +52,7 @@ class Projects extends Component {
               <li>CSS</li>
               <li>HTML</li>
             </SliderCardList>
-            <Link href="https://github.com/kylenovak/novakcodes-theme-project" title="Github source code">
+            <Link href="https://github.com/kylenovak/wordpress-blog-theme" title="Github source code">
               <button><i className="fab fa-github-square"></i><span> View Source</span></button>
             </Link>
           </SliderCard>

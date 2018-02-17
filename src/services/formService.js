@@ -23,6 +23,10 @@ class Form {
     if (form) {
       form.reset();
     }
+
+    for (let field in this.form.fields) {
+      this.form.fields[field].value = '';
+    }
   }
 
   getFormFields() {
