@@ -7,6 +7,55 @@ import './styles/footer.css';
 const scrollToHash = require('../../../services/scrollToHash');
 
 class Footer extends Component {
+  constructor(props) {
+    super(props);
+    this.handleClick = this.handleClick.bind(this);
+  }
+
+  componentDidMount() {
+    this.stickyNav = document.getElementById('navigation-sticky');
+    this.staticNav = document.getElementById('navigation-static');
+  }
+
+  handleClick(e) {
+    let node = e.target;
+
+    if (node.localName !== 'ul' && node.localName !== 'li') {
+      if (node.localName === 'span') {
+        node = node.parentNode;
+      }
+      if (node.localName === 'img') {
+        node = node.parentNode;
+      }
+
+      this.stickyNav.classList.remove('show');
+
+      let id = scrollToHash(node.href);
+      this.setActiveNavLink(id);
+    }
+  }
+
+  setActiveNavLink(id) {
+    id = (id === '') ? 'home' : id;
+    this.syncActiveNavIds(`nav-${id}-static`);
+  }
+
+  syncActiveNavIds(id) {
+    let staticNavItems = this.staticNav.children[0].children;
+    let stickyNavItems = this.stickyNav.children[0].children;
+
+    for (let i = 0; i < staticNavItems.length; i++) {
+      if (staticNavItems[i].id === id) {
+        staticNavItems[i].classList.add('active');
+        stickyNavItems[i].classList.add('active');
+      }
+      else {
+        staticNavItems[i].classList.remove('active');
+        stickyNavItems[i].classList.remove('active');
+      }
+    }
+  }
+
   render() {
     return (
       <footer id="footer">
@@ -15,9 +64,11 @@ class Footer extends Component {
             <SectionColumn>
               <h4>Site Info</h4>
               <p>
-                <NavLink exact to="/">
-                  <img onClick={() => scrollToHash('#header')} src={require('../../../images/favicon.png')} title="Home" alt="Home" width="64" height="64" />
-                </NavLink>
+                <span onClick={this.handleClick}>
+                  <NavLink exact to="/">
+                    <img src={require('../../../images/favicon.png')} title="Home" alt="Home" width="64" height="64" />
+                  </NavLink>
+                </span>
                 This site was built by hand with HTML, CSS, JavaScript, and <Link href="https://reactjs.org/" title="ReactJS">ReactJS</Link> - Kyle Novak
               </p>
             </SectionColumn>
@@ -25,14 +76,14 @@ class Footer extends Component {
               <h4>Browse</h4>
               <ul>
                 <div>
-                  <li><NavLink to="#skills">Skills</NavLink></li>
-                  <li><NavLink to="#experience">Experience</NavLink></li>
-                  <li><NavLink to="#education">Education</NavLink></li>
+                  <li onClick={this.handleClick} title="My Technical Skills"><NavLink to="#skills">Skills</NavLink></li>
+                  <li onClick={this.handleClick} title="My Professional Experience"><NavLink to="#experience">Experience</NavLink></li>
+                  <li onClick={this.handleClick} title="My Education"><NavLink to="#education">Education</NavLink></li>
                 </div>
                 <div>
-                  <li><NavLink to="#projects">Projects</NavLink></li>
-                  <li><NavLink to="#about">About</NavLink></li>
-                  <li><NavLink to="#contact">Contact</NavLink></li>
+                  <li onClick={this.handleClick} title="My Personal Projects"><NavLink to="#projects">Projects</NavLink></li>
+                  <li onClick={this.handleClick} title="About Me"><NavLink to="#about">About</NavLink></li>
+                  <li onClick={this.handleClick} title="Contact Me"><NavLink to="#contact">Contact</NavLink></li>
                 </div>
               </ul>
             </SectionColumn>

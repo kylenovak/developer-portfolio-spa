@@ -58,7 +58,7 @@
 
 @media (min-width: 600px) {
   #navigation-sticky.navigation {
-        min-width: 100%;
+    min-width: 100%;
     top: 49px;
   }
 
