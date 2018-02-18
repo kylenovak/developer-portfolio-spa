@@ -25,16 +25,6 @@ class Experience extends Component {
               </SliderCardList>
               <SliderCardLabel>June 2017 - Present</SliderCardLabel>
             </SliderCard>
-            <SliderCard title="Software Engineer" subTitle="The Boeing Company">
-              <SliderCardImage href="http://www.boeing.com" src="boeing.png" subTitle="The Boeing Company" />
-              <SliderCardList title="Tools & Technologies">
-                <li>C++</li>
-                <li>Python</li>
-                <li>Qt</li>
-                <li>CMake</li>
-              </SliderCardList>
-              <SliderCardLabel>June 2017 - Present</SliderCardLabel>
-            </SliderCard>
             <SliderCard title="Full-stack Software Developer" subTitle="O'Reilly Auto Parts">
               <SliderCardImage href="https://www.oreillyauto.com" src="oreilly.png" subTitle="O'Reilly Auto Parts" />
               <SliderCardList title="Tools & Technologies">
