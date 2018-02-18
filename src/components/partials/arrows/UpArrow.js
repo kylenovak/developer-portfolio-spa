@@ -7,7 +7,7 @@ class UpArrow extends Component {
     return (
       <span id="up-arrow"
         className={this.props.hide ? 'hide' : 'show'}
-        onClick={() => scrollToHash('#app')} title="Sroll up">
+        onClick={() => scrollToHash('#header-static')} title="Sroll up">
         <i className="fas fa-angle-up"></i>
       </span>
     );

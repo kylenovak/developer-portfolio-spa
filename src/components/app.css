@@ -5,17 +5,14 @@
 }
 
 #app #background-img {
- position: absolute;
+  position: absolute;
 
- top: 0;
+  top: 0;
 
- width: 100%;
- height: 100%;
+  width: 100%;
+  height: 100%;
 
- z-index: -999;
-
- -webkit-filter: grayscale(100%);
- filter: grayscale(100%);
+  z-index: -999;
 }
 
 @media (min-width: 775px) {
