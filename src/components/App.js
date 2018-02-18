@@ -28,9 +28,40 @@ class App extends Component {
 
   setScrollState(el) {
     const y = el.scrollTop;
+    const width = window.innerWidth;
+    let scrollOffset = 64;
+    let hash = 'home';
+
+    if (width < 900) {
+      scrollOffset = 44;
+    }
+    else if (width >= 900 && width < 1200) {
+      scrollOffset = 54;
+    }
+
+    if (y > this.contact.offsetTop - scrollOffset) {
+      hash = 'contact';
+    }
+    else if (y > this.about.offsetTop - scrollOffset) {
+      hash = 'about';
+    }
+    else if (y > this.projects.offsetTop - scrollOffset) {
+      hash = 'projects';
+    }
+    else if (y > this.education.offsetTop - scrollOffset) {
+      hash = 'education';
+    }
+    else if (y > this.experience.offsetTop - scrollOffset) {
+      hash = 'experience';
+    }
+    else if (y > this.skills.offsetTop - scrollOffset) {
+      hash = 'skills';
+    }
+
     this.setState({
       isScrollAtBottom: y >= (el.scrollHeight - el.offsetHeight),
-      isStickyNavHidden: y <= this.navigation.offsetTop
+      isStickyNavHidden: y <= this.navigation.offsetTop,
+      activeNavHash: hash
     });
   }
 
@@ -46,6 +77,12 @@ class App extends Component {
     // cache dom elements
     this.app = document.getElementById('app');
     this.skills = document.getElementById('skills');
+    this.experience = document.getElementById('experience');
+    this.education = document.getElementById('education');
+    this.projects = document.getElementById('projects');
+    this.about = document.getElementById('about');
+    this.contact = document.getElementById('contact');
+
     this.navigation = document.getElementById('navigation-static');
 
     window.addEventListener('resize', this.handleResize);
@@ -59,7 +96,7 @@ class App extends Component {
     return (
       <div id="app-container" className="flexbox">
         <StickyHeader hide={this.state.isStickyNavHidden}>
-          <Navigation uniqueNavIdSuffix="sticky" />
+          <Navigation uniqueNavIdSuffix="sticky" activeNavHash={this.state.activeNavHash} />
         </StickyHeader>
 
         <Header uniqueHeaderIdSuffix="sticky" />
@@ -73,7 +110,7 @@ class App extends Component {
             <Header uniqueHeaderIdSuffix="static" />
             <Banner />
             <div style={{opacity: this.state.isStickyNavHidden ? '1': '0'}}>
-              <Navigation uniqueNavIdSuffix="static" />
+              <Navigation uniqueNavIdSuffix="static" activeNavHash={this.state.activeNavHash} />
             </div>
             <Skills />
             <Experience />

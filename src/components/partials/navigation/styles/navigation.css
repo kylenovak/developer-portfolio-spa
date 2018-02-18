@@ -38,6 +38,11 @@
   background-color: rgba(255, 255, 255, 0.75);
 }
 
+.navigation ul li span.highlight {
+  border-bottom: 0;
+  padding-bottom: 0;
+}
+
 @media (max-width: 599px) {
   #navigation-sticky.navigation {
     display: hidden;
@@ -84,6 +89,11 @@
 
   #navigation-sticky.navigation {
     top: 0;
+  }
+
+  .navigation ul li span.highlight {
+    border-bottom: 2px solid rgb(191, 221, 239);
+    padding-bottom: 5px;
   }
 }
 

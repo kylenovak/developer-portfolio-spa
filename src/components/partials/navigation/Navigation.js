@@ -13,18 +13,7 @@ class Navigation extends Component {
 
     this.history = createHistory();
 
-    const hash = window.location.hash.split('#').slice(1).join('#');
-    this.defaultNavId = null;
-    if (hash) {
-      this.defaultNavId = `nav-${hash}-${this.props.uniqueNavIdSuffix}`;
-    }
-    else {
-      this.defaultNavId = `nav-home-${this.props.uniqueNavIdSuffix}`;
-    }
-
-    this.state = {
-      navId: this.defaultNavId
-    };
+    this.hash = window.location.hash.split('#').slice(1).join('#');
 
     this.unlisten = this.history.listen((location, action) => {
       let id = scrollToHash(location.hash);
@@ -34,7 +23,9 @@ class Navigation extends Component {
 
   componentDidMount() {
     this.stickyNav = document.getElementById('navigation-sticky');
-    document.getElementById(this.defaultNavId).classList.add('active');
+    this.staticNav = document.getElementById('navigation-static');
+
+    this.setActiveNavLink(this.hash);
   }
 
   componentWillUnmount() {
@@ -45,10 +36,16 @@ class Navigation extends Component {
     let node = e.target;
 
     if (node.localName !== 'ul') {
-      if (node.localName === 'i') {
+      if (node.localName === 'span') {
         node = node.parentNode;
       }
-      
+      if (node.localName === 'i') {
+        node = node.parentNode;
+        if (node.localName === 'span') {
+          node = node.parentNode;
+        }
+      }
+
       this.stickyNav.classList.remove('show');
 
       let id = scrollToHash(node.href);
@@ -57,26 +54,24 @@ class Navigation extends Component {
   }
 
   setActiveNavLink(id) {
-    let activeNavId = `nav-home-${this.props.uniqueNavIdSuffix}`;
-    if (id !== '') {
-      activeNavId = `nav-${id}-${this.props.uniqueNavIdSuffix}`;
+    id = (id === '') ? 'home' : id;
+    this.syncActiveNavIds(`nav-${id}-static`);
+  }
+
+  syncActiveNavIds(id) {
+    let staticNavItems = this.staticNav.children[0].children;
+    let stickyNavItems = this.stickyNav.children[0].children;
+
+    for (let i = 0; i < staticNavItems.length; i++) {
+      if (staticNavItems[i].id === id) {
+        staticNavItems[i].classList.add('active');
+        stickyNavItems[i].classList.add('active');
+      }
+      else {
+        staticNavItems[i].classList.remove('active');
+        stickyNavItems[i].classList.remove('active');
+      }
     }
-
-    this.setState((prevState, props) => {
-      let prevNavId = prevState.navId ? prevState.navId : activeNavId;
-
-      let prevNavLink = document.getElementById(prevNavId);
-      let activeNavLink = document.getElementById(activeNavId);
-
-      if (prevNavLink) {
-        prevNavLink.classList.remove('active');
-      }
-      if (activeNavLink) {
-        activeNavLink.classList.add('active');
-      }
-
-      return {navId: activeNavId};
-    });
   }
 
   render() {
@@ -84,25 +79,53 @@ class Navigation extends Component {
       <nav id={`navigation-${this.props.uniqueNavIdSuffix}`} className="navigation">
         <ul className="flexbox-item flex-row container" onClick={this.handleClick}>
           <li id={`nav-home-${this.props.uniqueNavIdSuffix}`} title="Home">
-            <NavLink exact to="/"><i className="fas fa-home"></i> Home</NavLink>
+            <NavLink exact to="/">
+              <span className={'home' === this.props.activeNavHash ? 'highlight' : ''}>
+                <i className="fas fa-home"></i> Home
+              </span>
+            </NavLink>
           </li>
           <li id={`nav-skills-${this.props.uniqueNavIdSuffix}`} title="My Technical Skills">
-            <NavLink to="#skills"><i className="fas fa-chart-bar"></i> Skills</NavLink>
+            <NavLink to="#skills">
+              <span className={'skills' === this.props.activeNavHash ? 'highlight' : ''}>
+                <i className="fas fa-chart-bar"></i> Skills
+              </span>
+            </NavLink>
           </li>
           <li id={`nav-experience-${this.props.uniqueNavIdSuffix}`} title="My Professional Experience">
-            <NavLink to="#experience"><i className="fas fa-briefcase"></i> Experience</NavLink>
+            <NavLink to="#experience">
+              <span className={'experience' === this.props.activeNavHash ? 'highlight' : ''}>
+                <i className="fas fa-briefcase"></i> Experience
+              </span>
+            </NavLink>
           </li>
           <li id={`nav-education-${this.props.uniqueNavIdSuffix}`} title="My Education">
-            <NavLink to="#education"><i className="fas fa-graduation-cap"></i> Education</NavLink>
+            <NavLink to="#education">
+              <span className={'education' === this.props.activeNavHash ? 'highlight' : ''}>
+                <i className="fas fa-graduation-cap"></i> Education
+              </span>
+            </NavLink>
           </li>
           <li id={`nav-projects-${this.props.uniqueNavIdSuffix}`} title="My Personal Projects">
-            <NavLink to="#projects"><i className="fas fa-keyboard"></i> Projects</NavLink>
+            <NavLink to="#projects">
+              <span className={'projects' === this.props.activeNavHash ? 'highlight' : ''}>
+                <i className="fas fa-keyboard"></i> Projects
+              </span>
+            </NavLink>
           </li>
           <li id={`nav-about-${this.props.uniqueNavIdSuffix}`} title="About Me">
-            <NavLink to="#about"><i className="far fa-question-circle"></i> About</NavLink>
+            <NavLink to="#about">
+              <span className={'about' === this.props.activeNavHash ? 'highlight' : ''}>
+                <i className="far fa-question-circle"></i> About
+              </span>
+            </NavLink>
           </li>
           <li id={`nav-contact-${this.props.uniqueNavIdSuffix}`} title="Contact Me">
-            <NavLink to="#contact"><i className="far fa-envelope"></i> Contact</NavLink>
+            <NavLink to="#contact">
+              <span className={'contact' === this.props.activeNavHash ? 'highlight' : ''}>
+                <i className="far fa-envelope"></i> Contact
+              </span>
+            </NavLink>
           </li>
         </ul>
       </nav>
