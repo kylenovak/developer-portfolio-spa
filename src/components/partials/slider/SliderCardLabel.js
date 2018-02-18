@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import './styles/sliderCardLabel.css';
 
 class SliderCardLabel extends Component {
   render() {
