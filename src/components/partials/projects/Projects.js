@@ -14,7 +14,21 @@ class Projects extends Component {
         <SectionHeader title="Independent Projects" />
         <SectionRow classes="project-cards">
           <Slider>
-            <SliderCard title="R&#233;sum&#233; SPA" subTitle="kylejnovak.com">
+            <SliderCard title="My Game Arcade" subTitle="Live @ novak.codes">
+              <p>I created playable browser games with HTML, CSS, and JavaScript, and developed a web app to host them.</p>
+              <SliderCardList title="Tools & Technologies">
+                <li>JavaScript</li>
+                <li>ReactJS</li>
+                <li>ExpressJS</li>
+                <li>NodesJS</li>
+                <li>HTML</li>
+                <li>CSS</li>
+              </SliderCardList>
+              <Link href="https://github.com/kylenovak/my-game-arcade" title="Github source code">
+                <button><i className="fab fa-github-square"></i><span> View Source</span></button>
+              </Link>
+            </SliderCard>
+            <SliderCard title="Developer Portfolio SPA" subTitle="Live @ kylejnovak.com">
               <p>I rebuilt my portfolio site into a SPA (Single Page Application) by using a modern JavaScript tech stack.</p>
               <SliderCardList title="Tools & Technologies">
                 <li>JavaScript</li>

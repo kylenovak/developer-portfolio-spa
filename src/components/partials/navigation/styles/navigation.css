@@ -84,11 +84,12 @@
 /* tablets portrait */
 @media (min-width: 775px) {
   .navigation ul li a {
-    padding: 10px !important;
+    padding: 10px 9px !important;
   }
 
   #navigation-sticky.navigation {
     top: 0;
+    padding-right: 17px;
   }
 
   .navigation ul li span.highlight {
