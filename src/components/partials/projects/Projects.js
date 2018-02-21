@@ -14,7 +14,7 @@ class Projects extends Component {
         <SectionHeader title="Independent Projects" />
         <SectionRow classes="project-cards">
           <Slider>
-            <SliderCard title="My Game Arcade" subTitle="Live @ novak.codes">
+            <SliderCard title="Browser Games" subTitle="Live @ novak.codes">
               <p>I created playable browser games with HTML, CSS, and JavaScript, and developed a web app to host them.</p>
               <SliderCardList title="Tools & Technologies">
                 <li>JavaScript</li>
@@ -24,7 +24,7 @@ class Projects extends Component {
                 <li>HTML</li>
                 <li>CSS</li>
               </SliderCardList>
-              <Link href="https://github.com/kylenovak/my-game-arcade" title="Github source code">
+              <Link href="https://github.com/kylenovak/browser-games" title="Github source code">
                 <button><i className="fab fa-github-square"></i><span> View Source</span></button>
               </Link>
             </SliderCard>
