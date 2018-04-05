@@ -16,7 +16,7 @@ class Projects extends Component {
           <Slider>
             <SliderCard title="Novak Games" subTitle={
               <Link href="https://www.novakgames.com" title="Novak Games">
-                novakgames.com
+                www.novakgames.com
               </Link>
             }>
               <p>I created playable browser games with HTML, CSS, and JavaScript, and developed a web app to host them.</p>
@@ -34,7 +34,7 @@ class Projects extends Component {
             </SliderCard>
             <SliderCard title="Developer Portfolio SPA" subTitle={
               <Link href="https://www.kylejnovak.com" title="Kyle J. Novak's Developer Portfolio">
-                kylejnovak.com
+                www.kylejnovak.com
               </Link>
             }>
               <p>I rebuilt my portfolio site into a SPA (Single Page Application) by using a modern JavaScript tech stack.</p>
@@ -50,7 +50,7 @@ class Projects extends Component {
                 <button><i className="fab fa-github-square"></i><span> View Source</span></button>
               </Link>
             </SliderCard>
-            <SliderCard title="Portfolio Web App" subTitle="kylejnovak.com">
+            <SliderCard title="Portfolio Web App">
               <p>This was my original portfolio site that I built with a Python stack.</p>
               <SliderCardList title="Tools & Technologies">
                 <li>Python</li>
@@ -66,7 +66,7 @@ class Projects extends Component {
                 <button><i className="fab fa-github-square"></i><span> View Source</span></button>
               </Link>
             </SliderCard>
-            <SliderCard title="Wordpress Blog" subTitle="novak.codes">
+            <SliderCard title="Wordpress Blog">
               <p>I designed and built a wordpress child-theme on top of the Genesis theme framework for my blog.</p>
               <SliderCardList title="Tools & Technologies">
                 <li>Wordpress</li>
