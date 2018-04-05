@@ -14,7 +14,11 @@ class Projects extends Component {
         <SectionHeader title="Independent Projects" />
         <SectionRow classes="project-cards">
           <Slider>
-            <SliderCard title="Browser Games" subTitle="Live @ novak.codes">
+            <SliderCard title="Novak Games" subTitle={
+              <Link href="https://www.novakgames.com" title="Novak Games">
+                novakgames.com
+              </Link>
+            }>
               <p>I created playable browser games with HTML, CSS, and JavaScript, and developed a web app to host them.</p>
               <SliderCardList title="Tools & Technologies">
                 <li>JavaScript</li>
@@ -24,11 +28,15 @@ class Projects extends Component {
                 <li>HTML</li>
                 <li>CSS</li>
               </SliderCardList>
-              <Link href="https://github.com/kylenovak/browser-games" title="Github source code">
+              <Link href="https://github.com/kylenovak/novakgames" title="Github source code">
                 <button><i className="fab fa-github-square"></i><span> View Source</span></button>
               </Link>
             </SliderCard>
-            <SliderCard title="Developer Portfolio SPA" subTitle="Live @ kylejnovak.com">
+            <SliderCard title="Developer Portfolio SPA" subTitle={
+              <Link href="https://www.kylejnovak.com" title="Kyle J. Novak's Developer Portfolio">
+                kylejnovak.com
+              </Link>
+            }>
               <p>I rebuilt my portfolio site into a SPA (Single Page Application) by using a modern JavaScript tech stack.</p>
               <SliderCardList title="Tools & Technologies">
                 <li>JavaScript</li>
